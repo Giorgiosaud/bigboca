@@ -1,0 +1,1 @@
+<?php /* Template Name: Capabilities Contenido Con Fondo*/ ?>
