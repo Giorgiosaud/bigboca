@@ -64,44 +64,16 @@ body { font-size:62.5%; }
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
 
-.icon-boca:before {
-  content: '\62';
-}
-
-/* 'b' */
-.icon-cesta:before {
-  content: '\63';
-}
-
-/* 'c' */
-.icon-eye:before {
-  content: '\65';
-}
-
-/* 'e' */
-.icon-vaso:before {
-  content: '\67';
-}
-
-/* 'g' */
-.icon-horn:before {
-  content: '\68';
-}
-
-/* 'h' */
-.icon-lentes:before {
-  content: '\6c';
-}
-
-/* 'l' */
-.icon-plane:before {
-  content: '\70';
-}
-
-/* 'p' */
-.icon-us:before {
-  content: '\75';
-}
+.icon-sampling:before { content: '\4d'; } /* 'M' */
+.icon-marketing:before { content: '\65'; } /* 'e' */
+.icon-facebook:before { content: '\66'; } /* 'f' */
+.icon-intercept:before { content: '\69'; } /* 'i' */
+.icon-language:before { content: '\6c'; } /* 'l' */
+.icon-message:before { content: '\6d'; } /* 'm' */
+.icon-polybag:before { content: '\70'; } /* 'p' */
+.icon-supermarket:before { content: '\73'; } /* 's' */
+.icon-twitter:before { content: '\74'; } /* 't' */
+.icon-us:before { content: '\75'; } /* 'u' */
 
 /* 'u' */
 body {
