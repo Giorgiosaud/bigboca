@@ -26,7 +26,7 @@ function usSection_shortcode($atts)
                 <?php echo $comment ?>
             </div>
             <div class="clearfix"></div>
-            <div class="<?= $icono ?> interno col-xs-5 col-sm-2">
+            <div class="iconoLeft interno col-xs-5 col-sm-2">
                 <span class="bigbocaicon icon-<?= $icono ?>" aria-hidden="true"></span>
             </div>
             <div class="<?= $descriptionClass ?> col-xs-10 col-md-5">
