@@ -135,7 +135,7 @@ jQuery(document).ready(function ($) {
         duration: jQuery('.se-container').find('.iconoLeft:eq(1)').closest('.se-content').outerHeight()
     })
         .setTween(fourthAnimation)
-        .addIndicators({name: "Mensaje As Effective"})
+        //.addIndicators({name: "Mensaje As Effective"})
         .addTo(controller);
     var fifthAnimation = new TimelineMax();
     fifthAnimation.insert(TweenMax.from($('.mensajeInicial:eq(1)'), 1, {marginTop: "-10em"}));
