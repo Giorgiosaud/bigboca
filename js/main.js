@@ -112,8 +112,8 @@ jQuery(document).ready(function ($) {
     var secondAnimation = new TimelineMax();
     secondAnimation.insert(TweenMax.from($('.se-container').first().find('.iconoLeft:eq(0)'), 1, {width: 0}));
     var scene = new ScrollMagic.Scene({
-        triggerElement: ".us",
-        duration: $('.us').height()
+        triggerElement: ".se-slope:nth-of-type(1)",
+        duration: jQuery('.se-container').find('.iconoLeft:eq(0)').closest('.se-content').outerHeight()
     })
         .setTween(secondAnimation)
         //.addIndicators({name: "Mostrar Us"})
