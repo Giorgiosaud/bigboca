@@ -129,7 +129,7 @@ jQuery(document).ready(function ($) {
         .addTo(controller);
     var fourthAnimation = new TimelineMax();
     fourthAnimation.insert(TweenMax.from($('.se-container').first().find('.iconoLeft:eq(1)'), 1, {width: 0}));
-    fourthAnimation.insert(TweenMax.from($('.se-slope:eq(2)'), 1, {y: "-40%"}));
+    //fourthAnimation.insert(TweenMax.from($('.se-slope:eq(2)'), 1, {y: "-40%"}));
     var scene = new ScrollMagic.Scene({
         triggerElement: '.se-slope:nth-of-type(3)',
         duration: jQuery('.se-container').find('.iconoLeft:eq(1)').closest('.se-content').outerHeight()
