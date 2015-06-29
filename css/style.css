@@ -534,4 +534,9 @@ nav.footer {
   right: 0;
   top: 40px; }
 
+.detalle.text-center {
+  background-color: rgba(197, 255, 248, 0.71);
+  padding: 2em;
+  border-radius: 10px; }
+
 /*# sourceMappingURL=style.css.map */
