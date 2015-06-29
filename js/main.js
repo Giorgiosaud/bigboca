@@ -48,7 +48,7 @@ jQuery(document).ready(function ($) {
         event.preventDefault();
         console.log(that);
         var that = $(this);
-        console.log(that);
+        console.log(that.parent().parent().siblings('.hiddenChildrens'));
         $(this).parent().parent().siblings('.hiddenChildrens').slideToggle('slow', function () {
             if (!$(this).is(":visible")) {
                 console.log('aaa');
