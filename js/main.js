@@ -125,7 +125,8 @@ jQuery(document).ready(function ($) {
         , 'easeinour'))
         .insert(TweenMax.to(
             $('.hiddenContentOnLoad'),1,{
-                opacity:0
+                opacity:0,
+                'display':'none'
             }
         ))
         .add(TweenMax.from(
