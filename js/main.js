@@ -46,18 +46,16 @@ jQuery(document).ready(function ($) {
     //acciones de click
     $(document).on('click touchstart', '.showChildrensButton', function (event) {
         event.preventDefault();
-        that=$(this);
+        console.log('touched');
+        var that=$(this);
         $(this).parent().parent().siblings('.hiddenChildrens').slideToggle('slow',function(){
 
             if (!$(this).is(":visible")) {
-                console.log('less');
                 that.text('Show +');
 
             }
             else {
-                console.log('more');
                 that.text('Hide -');
-
             }
         });
 
