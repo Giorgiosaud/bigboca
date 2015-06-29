@@ -1,6 +1,7 @@
 <?php
 function bigbocascripts()
 {
+    wp_deregister_script('jquery');
     wp_enqueue_style('bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', array(), '3.2');
     wp_enqueue_style('estiloBB', get_template_directory_uri() . '/css/style.css', array(), '3.2');
 
