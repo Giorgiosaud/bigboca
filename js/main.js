@@ -126,6 +126,10 @@ jQuery(document).ready(function ($) {
         .insert(TweenMax.to(
             $('.hiddenContentOnLoad'),1,{
                 opacity:0,
+            }
+        ))
+        .add(TweenMax.to(
+            $('.hiddenContentOnLoad'),0.1,{
                 'display':'none'
             }
         ))
