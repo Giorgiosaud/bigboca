@@ -51,12 +51,12 @@ jQuery(document).ready(function ($) {
         $(this).parent().parent().parent().siblings('.hiddenChildrens').slideToggle('slow', function () {
             if (!$(this).is(":visible")) {
                 console.log('aaa');
-                that.text('Show +');
+                that.text('Show more +');
 
             }
             else {
                 console.log('bbb');
-                that.text('Hide -');
+                that.text('Show Less -');
             }
         });
 
