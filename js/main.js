@@ -47,7 +47,8 @@ jQuery(document).ready(function ($) {
     $(document).on('click touchstart', '.showChildrensButton', function (event) {
         event.preventDefault();
         $(this).parent().parent().siblings('.hiddenChildrens').slideToggle('slow',function(){
-            if (!$(this).is(':visible') == true) {
+
+            if (!$(this).is(":visible")) {
                 $(this).text('Hidden Some -');
                 console.log('less');
             }
