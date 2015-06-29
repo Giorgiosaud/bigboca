@@ -104,7 +104,7 @@ function capabilitiesSection_shortcode($atts)
                             <div class="clearfix"></div>
                         </article>
                     </div>
-
+                    <div class="hidden-slope"></div>
                     <div class="hiddenChildrens">
                         <?php
                         if ($childrens->have_posts()) {
