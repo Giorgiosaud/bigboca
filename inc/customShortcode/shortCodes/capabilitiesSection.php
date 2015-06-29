@@ -73,8 +73,8 @@ function capabilitiesSection_shortcode($atts)
                     $urlBg = get_field('imagendefondo');
                     $color_fondo1 = get_field('color_fondo_1');
                     $color_fondo2 = get_field('color_fondo_2');
-                    $style = 'background: -webkit-linear-gradient(' . $color_fondo1 . ', ' . $color_fondo2 . '), url("' . $urlBg['url'] . '") !important;
-                             background: linear-gradient( ' . $color_fondo1 . ', ' . $color_fondo2 . ' ), url("' . $urlBg['url'] . '") !important';
+//                    $style = 'background: -webkit-linear-gradient(' . $color_fondo1 . ', ' . $color_fondo2 . '), url("' . $urlBg['url'] . '") !important;
+//                             background: linear-gradient( ' . $color_fondo1 . ', ' . $color_fondo2 . ' ), url("' . $urlBg['url'] . '") !important';
                     $colorIndicadores=get_field('color_de_indicadores');
                     $colorBordeIndicadores=get_field('color_de_borde_indicadores');
                     $colorDeFlechas=get_field('color_de_flechas');
@@ -89,7 +89,7 @@ function capabilitiesSection_shortcode($atts)
 
 
                     ?>
-                    <div id="<?= $id ?>" class="se-slope" style='<?= $style ?>'>
+                    <div id="<?= $id ?>" class="se-slope" >
                         <article class="se-content">
 <!--                            <div class="contenedorSlide">-->
 <!--                                <div id="carrusel_--><?//= $id ?><!--" class="carousel slide">-->
