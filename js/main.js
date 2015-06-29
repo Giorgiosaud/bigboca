@@ -49,13 +49,12 @@ jQuery(document).ready(function ($) {
         $(this).parent().parent().siblings('.hiddenChildrens').slideToggle('slow',function(){
 
             if (!$(this).is(":visible")) {
-                $(this).text('Hidden Some -');
+                //$(this).text('Hidden Some -');
                 console.log('less');
             }
             else {
                 console.log('more');
-                $(this).text('Show More +');
-
+                //$(this).text('Show More +');
             }
         });
 
