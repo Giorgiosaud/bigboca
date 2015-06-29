@@ -525,7 +525,8 @@ nav.footer {
   position: fixed;
   height: 100%;
   width: 100%;
-  background-color: #ffe600; }
+  background-color: #ffe600;
+  z-index: 100; }
 
 .mapBB {
   width: 90%;
