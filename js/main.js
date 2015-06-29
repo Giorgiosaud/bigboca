@@ -46,16 +46,18 @@ jQuery(document).ready(function ($) {
     //acciones de click
     $(document).on('click touchstart', '.showChildrensButton', function (event) {
         event.preventDefault();
-        $(this).parent().parent().siblings('.hiddenChildrens').slideToggle('slow');
-        if (!$(this).parent().parent().siblings('.hiddenChildrens').is(':visible') == true) {
-            $(this).text('Hidden Some -');
-            console.log('less');
-        }
-        else {
-            console.log('more');
-            $(this).text('Show More +');
+        $(this).parent().parent().siblings('.hiddenChildrens').slideToggle('slow',function(){
+            if (!$(this).is(':visible') == true) {
+                $(this).text('Hidden Some -');
+                console.log('less');
+            }
+            else {
+                console.log('more');
+                $(this).text('Show More +');
 
-        }
+            }
+        });
+
     });
     $(document).on('click touchstart', '.dropMenu', function (event) {
         event.preventDefault();
