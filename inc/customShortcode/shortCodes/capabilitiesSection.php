@@ -95,7 +95,7 @@ function capabilitiesSection_shortcode($atts)
 
                     <div id="<?= $id ?>" class="se-slope" style='<?= $style ?>'>
                         <article class="se-content">
-                            <div class="<?= $descriptionClass ?> col-xs-10 col-md-5">
+                            <div class="<?= $descriptionClass ?> col-xs-12">
                                 <?= showCapability(get_field('icono'), $title, $content, $descriptionAlignment) ?>
                                 <div class="showChildrensButton">
                                     Show More +
@@ -136,7 +136,7 @@ function capabilitiesSection_shortcode($atts)
                                 ?>
                                 <div id="<?= $id ?>" class="se-slope" style='<?= $style ?>'>
                                     <article class="se-content">
-                                        <div class="<?= $descriptionClass ?> col-xs-10 col-md-5">
+                                        <div class="<?= $descriptionClass ?> col-xs-12">
                                             <?= showCapability(get_field('icono'), get_the_title(), get_the_content(),
                                                 $descriptionAlignment) ?>
                                         </div>
@@ -154,7 +154,7 @@ function capabilitiesSection_shortcode($atts)
 
                     <div id="<?= $id ?>" class="se-slope" style='<?= $style ?>'>
                         <article class="se-content">
-                            <div class="<?= $descriptionClass ?> col-xs-10 col-md-5">
+                            <div class="<?= $descriptionClass ?> col-xs-12">
                                 <?= showCapability(get_field('icono'), get_the_title(), get_the_content(),
                                     $descriptionAlignment) ?>
                             </div>
