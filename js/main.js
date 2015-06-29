@@ -51,12 +51,12 @@ jQuery(document).ready(function ($) {
 
             if (!$(this).is(":visible")) {
                 console.log('less');
-                $that.text('Show More +');
+                that.text('Show More +');
 
             }
             else {
                 console.log('more');
-                $that.text('Hidden Some -');
+                that.text('Hidden Some -');
 
             }
         });
