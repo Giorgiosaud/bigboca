@@ -49,9 +49,10 @@ jQuery(document).ready(function ($) {
         $(this).parent().parent().siblings('.hiddenChildrens').slideToggle('slow');
         if ($(this).parent().parent().siblings('.hiddenChildrens').is(':visible')) {
             $(this).text('Hidden Some -');
-
+            console.log('less');
         }
         else {
+console.log('more');
             $(this).text('Show More +');
 
         }
