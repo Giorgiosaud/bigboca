@@ -184,14 +184,14 @@ body {
   text-align: justify;
   margin-left: 2em;
   color: #1f4dc7;
-  /*blueraro*/ }
+  /*$blueraro*/ }
 
 .descripcionLeft {
   float: left;
   text-align: justify;
   margin-right: 2em;
   color: #fff;
-  /*blueraro*/ }
+  /*$blueraro*/ }
 
 .titulo {
   font-size: 2.5em;
@@ -406,7 +406,7 @@ ul.menuItems {
   -webkit-transform: rotate(5deg);
   -ms-transform: rotate(5deg);
   transform: rotate(5deg);
-  color: #000;
+  color: blue;
   padding: 150px 100px 250px 100px; }
 
 .showChildrensButton {
