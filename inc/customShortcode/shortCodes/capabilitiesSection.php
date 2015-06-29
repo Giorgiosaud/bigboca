@@ -85,7 +85,9 @@ function capabilitiesSection_shortcode($atts)
                     $childrenArgs = array(
                         'post_parent' => $id2,
                         'post_type'   => 'capabilities',
-                        'post_status' => 'publish'
+                        'post_status' => 'publish',
+                        'orderby'=>'menu_order',
+                        'order'=>'ASC'
                     );
                     $childrens = new WP_Query($childrenArgs);
 
