@@ -47,14 +47,15 @@ jQuery(document).ready(function ($) {
     $(document).on('click touchstart', '.showChildrensButton', function (event) {
         event.preventDefault();
         console.log('touched');
-        var that=$(this);
-        $(this).parent().parent().siblings('.hiddenChildrens').slideToggle('slow',function(){
-            console.log($(this));
+        var that = $(this);
+        $(this).parent().parent().siblings('.hiddenChildrens').slideToggle('slow', function () {
             if (!$(this).is(":visible")) {
+                console.log('aaa');
                 that.text('Show +');
 
             }
             else {
+                console.log('bbb');
                 that.text('Hide -');
             }
         });
