@@ -92,15 +92,27 @@ function capabilitiesSection_shortcode($atts)
 
 
                     ?>
-                    <div id="<?= $id ?>" class="se-slope" >
+                    <div id="<?= $id ?>" class="se-slope" style='<?= $style ?>'>
                         <article class="se-content">
-                            <?= showCapability(get_field('icono'), $title, $content, 'center') ?>
-                    <?php
+                            <div class="<?= $descriptionClass ?> col-xs-10 col-md-5">
+                                <?= showCapability(get_field('icono'), $title, $content, 'center') ?>
+                                </div>
+                            <div class="clearfix"></div>
+                        </article>
+                    </div>
+                                <?php
                     if ($childrens->have_posts()) {
                         while ($childrens->have_posts()) : $childrens->the_post();
                             ?>
-                            <?= showCapability(get_field('icono'), get_the_title(),
-                                get_the_content(), 'center', 'container') ?>
+                            <div id="<?= $id ?>" class="se-slope" style='<?= $style ?>'>
+                                <article class="se-content">
+                                    <div class="<?= $descriptionClass ?> col-xs-10 col-md-5">
+                                        <?= showCapability(get_field('icono'), get_the_title(),
+                                            get_the_content(), 'center', 'container') ?>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </article>
+                            </div>
                         <?php
                         endwhile;
                     }
