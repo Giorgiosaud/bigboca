@@ -144,13 +144,14 @@ function capabilitiesSection_shortcode($atts)
                                             <div class="clearfix"></div>
                                             <!--                                </article>-->
                                         </div>
+                                        <div class="separador"></div>
                                     <?php
                                     endwhile;
                                 }
                                 ?>
                                 <div class="clearfix"></div>
                         </article>
-                    
+
                     </div>
                 <?php
                 } else {
