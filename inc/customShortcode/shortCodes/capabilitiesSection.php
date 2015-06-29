@@ -101,8 +101,8 @@ function capabilitiesSection_shortcode($atts)
                                     Show More +
                                 </div>
                             </div>
+                            <div class="clearfix"></div>
                         </article>
-                        <div class="clearfix"></div>
                     </div>
 
                     <div class="hiddenChildrens">
