@@ -52,8 +52,11 @@ function capabilitiesSection_shortcode($atts)
                 $opacity1 = get_field('opacity_1');
                 $color_fondo2 = get_field('color_fondo_2');
                 $opacity2 = get_field('opacity_2');
-                $style = 'background: -webkit-linear-gradient(' . hex2rgba($color_fondo1,$opacity1) . ', ' . hex2rgba($color_fondo2,$opacity2) . '), url("' . $urlBg['url'] . '") !important;
-                             background: linear-gradient( ' . hex2rgba($color_fondo1,$opacity1) . ', ' . hex2rgba($color_fondo2,$opacity2) . ' ), url("' . $urlBg['url'] . '") !important;  background-size: cover !important;';
+                $style = 'background: -webkit-linear-gradient(' . hex2rgba($color_fondo1,
+                        $opacity1) . ', ' . hex2rgba($color_fondo2, $opacity2) . '), url("' . $urlBg['url'] . '") !important;
+                             background: linear-gradient( ' . hex2rgba($color_fondo1,
+                        $opacity1) . ', ' . hex2rgba($color_fondo2,
+                        $opacity2) . ' ), url("' . $urlBg['url'] . '") !important;  background-size: cover !important;';
                 if ($CapabilitiesDefinitionsIndex % 2 != 0) {
                     $iconoClass = 'iconoRight';
                     $descriptionClass = 'descripcionRight';
@@ -75,9 +78,9 @@ function capabilitiesSection_shortcode($atts)
                     $color_fondo2 = get_field('color_fondo_2');
 //                    $style = 'background: -webkit-linear-gradient(' . $color_fondo1 . ', ' . $color_fondo2 . '), url("' . $urlBg['url'] . '") !important;
 //                             background: linear-gradient( ' . $color_fondo1 . ', ' . $color_fondo2 . ' ), url("' . $urlBg['url'] . '") !important';
-                    $colorIndicadores=get_field('color_de_indicadores');
-                    $colorBordeIndicadores=get_field('color_de_borde_indicadores');
-                    $colorDeFlechas=get_field('color_de_flechas');
+                    $colorIndicadores = get_field('color_de_indicadores');
+                    $colorBordeIndicadores = get_field('color_de_borde_indicadores');
+                    $colorDeFlechas = get_field('color_de_flechas');
                     $cantidadDeHijos = 0;
                     $childrenArgs = array(
                         'post_parent' => $id2,
@@ -91,56 +94,17 @@ function capabilitiesSection_shortcode($atts)
                     ?>
                     <div id="<?= $id ?>" class="se-slope" >
                         <article class="se-content">
-<!--                            <div class="contenedorSlide">-->
-<!--                                <div id="carrusel_--><?//= $id ?><!--" class="carousel slide">-->
-<!--                                    <div class="carousel-inner" role="listbox">-->
-<!--                                        <div class="item active">-->
-                                            <?= showCapability(get_field('icono'), $title, $content, 'center') ?>
-<!--                                        </div>-->
-                                        <?php
-                                        if ($childrens->have_posts()) {
-                                            while ($childrens->have_posts()) : $childrens->the_post();
-                                                ?>
-<!--                                                <div class="item">-->
-                                                    <?= showCapability(get_field('icono'), get_the_title(),
-                                                        get_the_content(), 'center', 'container') ?>
-<!--                                                </div>-->
-                                            <?php
-                                            endwhile;
-                                        }
-
-                                        ?>
-<!--                                        <div class="clearfix"></div>-->
-<!--                                    </div>-->
-<!--                                    <ol class="carousel-indicators col-xs-12 text-center">-->
-<!--                                        <li style="background-color:--><?//= $colorIndicadores ?>/*;border:1px solid */<?//= $colorBordeIndicadores ?><!--"data-target="#carrusel_--><?//= $id ?><!--"-->
-<!--                                            data-slide-to="0" class="active"></li>-->
-<!--                                        --><?php
-//                                        if ($childrens->have_posts()) {
-//                                            while ($childrens->have_posts()) : $childrens->the_post();
-//                                                $cantidadDeHijos ++; ?>
-<!--                                                <li style="background-color:--><?//= $colorIndicadores ?>/*;border:1px solid */<?//= $colorBordeIndicadores ?><!--" data-target="#carrusel_--><?//= $id ?><!--"-->
-<!--                                                    data-slide-to="--><?//= $cantidadDeHijos ?><!--"></li>-->
-<!--                                            --><?php
-//                                            endwhile;
-//
-//                                        }
-//
-//
-//                                        ?>
-<!--                                    </ol>-->
-<!--                                    <a class="leftChild carousel-control" style="color:--><?//= $colorDeFlechas?><!--" href="#carrusel_--><?//= $id ?><!--" role="button"-->
-<!--                                       data-slide="prev">-->
-<!--                                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
-<!--                                        <span class="sr-only">Previous</span>-->
-<!--                                    </a>-->
-<!--                                    <a class="rightChild carousel-control" style="color:--><?//= $colorDeFlechas?><!--" href="#carrusel_--><?//= $id ?><!--" role="button"-->
-<!--                                       data-slide="next">-->
-<!--                                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
-<!--                                        <span class="sr-only">Next</span>-->
-<!--                                    </a>-->
-<!---->
-<!--                                </div>-->
+                            <?= showCapability(get_field('icono'), $title, $content, 'center') ?>
+                    <?php
+                    if ($childrens->have_posts()) {
+                        while ($childrens->have_posts()) : $childrens->the_post();
+                            ?>
+                            <?= showCapability(get_field('icono'), get_the_title(),
+                                get_the_content(), 'center', 'container') ?>
+                        <?php
+                        endwhile;
+                    }
+                    ?>
 
                             </div>
                             <div class="clearfix"></div>
