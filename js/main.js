@@ -48,8 +48,8 @@ jQuery(document).ready(function ($) {
         event.preventDefault();
         console.log(that);
         var that = $(this);
-        console.log(that.parent().parent().siblings('.hiddenChildrens'));
-        $(this).parent().parent().siblings('.hiddenChildrens').slideToggle('slow', function () {
+        console.log(that.parent().siblings('.hiddenChildrens'));
+        $(this).parent().siblings('.hiddenChildrens').slideToggle('slow', function () {
             if (!$(this).is(":visible")) {
                 console.log('aaa');
                 that.text('Show +');
