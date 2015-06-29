@@ -90,57 +90,57 @@ function capabilitiesSection_shortcode($atts)
 
                     ?>
                     <div id="<?= $id ?>" class="se-slope" style='<?= $style ?>'>
-                        <article class="se-content sinPaddingHorizontal">
-                            <div class="contenedorSlide">
-                                <div id="carrusel_<?= $id ?>" class="carousel slide">
-                                    <div class="carousel-inner" role="listbox">
-                                        <div class="item active">
+                        <article class="se-content">
+<!--                            <div class="contenedorSlide">-->
+<!--                                <div id="carrusel_--><?//= $id ?><!--" class="carousel slide">-->
+<!--                                    <div class="carousel-inner" role="listbox">-->
+<!--                                        <div class="item active">-->
                                             <?= showCapability(get_field('icono'), $title, $content, 'center') ?>
-                                        </div>
+<!--                                        </div>-->
                                         <?php
                                         if ($childrens->have_posts()) {
                                             while ($childrens->have_posts()) : $childrens->the_post();
                                                 ?>
-                                                <div class="item">
+<!--                                                <div class="item">-->
                                                     <?= showCapability(get_field('icono'), get_the_title(),
                                                         get_the_content(), 'center', 'container') ?>
-                                                </div>
+<!--                                                </div>-->
                                             <?php
                                             endwhile;
                                         }
 
                                         ?>
-                                        <div class="clearfix"></div>
-                                    </div>
-                                    <ol class="carousel-indicators col-xs-12 text-center">
-                                        <li style="background-color:<?= $colorIndicadores ?>;border:1px solid <?= $colorBordeIndicadores ?>"data-target="#carrusel_<?= $id ?>"
-                                            data-slide-to="0" class="active"></li>
-                                        <?php
-                                        if ($childrens->have_posts()) {
-                                            while ($childrens->have_posts()) : $childrens->the_post();
-                                                $cantidadDeHijos ++; ?>
-                                                <li style="background-color:<?= $colorIndicadores ?>;border:1px solid <?= $colorBordeIndicadores ?>" data-target="#carrusel_<?= $id ?>"
-                                                    data-slide-to="<?= $cantidadDeHijos ?>"></li>
-                                            <?php
-                                            endwhile;
-
-                                        }
-
-
-                                        ?>
-                                    </ol>
-                                    <a class="leftChild carousel-control" style="color:<?= $colorDeFlechas?>" href="#carrusel_<?= $id ?>" role="button"
-                                       data-slide="prev">
-                                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                                        <span class="sr-only">Previous</span>
-                                    </a>
-                                    <a class="rightChild carousel-control" style="color:<?= $colorDeFlechas?>" href="#carrusel_<?= $id ?>" role="button"
-                                       data-slide="next">
-                                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                                        <span class="sr-only">Next</span>
-                                    </a>
-
-                                </div>
+<!--                                        <div class="clearfix"></div>-->
+<!--                                    </div>-->
+<!--                                    <ol class="carousel-indicators col-xs-12 text-center">-->
+<!--                                        <li style="background-color:--><?//= $colorIndicadores ?>/*;border:1px solid */<?//= $colorBordeIndicadores ?><!--"data-target="#carrusel_--><?//= $id ?><!--"-->
+<!--                                            data-slide-to="0" class="active"></li>-->
+<!--                                        --><?php
+//                                        if ($childrens->have_posts()) {
+//                                            while ($childrens->have_posts()) : $childrens->the_post();
+//                                                $cantidadDeHijos ++; ?>
+<!--                                                <li style="background-color:--><?//= $colorIndicadores ?>/*;border:1px solid */<?//= $colorBordeIndicadores ?><!--" data-target="#carrusel_--><?//= $id ?><!--"-->
+<!--                                                    data-slide-to="--><?//= $cantidadDeHijos ?><!--"></li>-->
+<!--                                            --><?php
+//                                            endwhile;
+//
+//                                        }
+//
+//
+//                                        ?>
+<!--                                    </ol>-->
+<!--                                    <a class="leftChild carousel-control" style="color:--><?//= $colorDeFlechas?><!--" href="#carrusel_--><?//= $id ?><!--" role="button"-->
+<!--                                       data-slide="prev">-->
+<!--                                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
+<!--                                        <span class="sr-only">Previous</span>-->
+<!--                                    </a>-->
+<!--                                    <a class="rightChild carousel-control" style="color:--><?//= $colorDeFlechas?><!--" href="#carrusel_--><?//= $id ?><!--" role="button"-->
+<!--                                       data-slide="next">-->
+<!--                                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
+<!--                                        <span class="sr-only">Next</span>-->
+<!--                                    </a>-->
+<!---->
+<!--                                </div>-->
 
                             </div>
                             <div class="clearfix"></div>
