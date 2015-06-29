@@ -92,9 +92,11 @@ function capabilitiesSection_shortcode($atts)
 
 
                     ?>
+                            
                     <div id="<?= $id ?>" class="se-slope" style='<?= $style ?>'>
                         <article class="se-content">
-                            <?= showCapability(get_field('icono'), $title, $content, 'center') ?>
+                            <div class="<?= $descriptionClass ?> col-xs-10 col-md-5"></div>
+                            <?= showCapability(get_field('icono'), $title, $content, $descriptionAlignment) ?>
                             <div class="showChildrensButton">
                                 Show More +
                             </div>
