@@ -99,8 +99,10 @@ function capabilitiesSection_shortcode($atts)
                     </div>
                     <?php
                     if ($childrens->have_posts()) {
+                        $CapabilitiesDefinitionsIndexChild==0;
                         while ($childrens->have_posts()) : $childrens->the_post();
                             $id = get_field('id');
+                            $CapabilitiesDefinitionsIndexChild++;
                             $urlBg = get_field('imagendefondo');
                             $color_fondo1 = get_field('color_fondo_1');
                             $opacity1 = get_field('opacity_1');
@@ -111,7 +113,7 @@ function capabilitiesSection_shortcode($atts)
                              background: linear-gradient( ' . hex2rgba($color_fondo1,
                                     $opacity1) . ', ' . hex2rgba($color_fondo2,
                                     $opacity2) . ' ), url("' . $urlBg['url'] . '") !important;  background-size: cover !important;';
-                            if ($CapabilitiesDefinitionsIndex % 2 != 0) {
+                            if ($CapabilitiesDefinitionsIndexChild % 2 != 0) {
                                 $iconoClass = 'iconoRight';
                                 $descriptionClass = 'descripcionRight';
                                 $descriptionAlignment = 'right';
