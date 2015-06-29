@@ -94,7 +94,7 @@ body {
   background-color: white; }
 
 .blueBoca {
-  background-color: blue; }
+  background-color: #1f4dc7; }
 
 .whiteboca {
   background-color: white; }
@@ -339,7 +339,7 @@ ul.menuItems {
   /*display: inline-block;*/ }
 
 .se-slope:nth-child(odd) {
-  background: blue;
+  background: #1f4dc7;
   -webkit-transform: rotate(5deg);
   -ms-transform: rotate(5deg);
   transform: rotate(5deg);
@@ -358,7 +358,7 @@ ul.menuItems {
   font-size: 2em; }
 
 .se-slope:nth-child(odd) .se-content h3 {
-  background: blue;
+  background: #1f4dc7;
   color: #000; }
 
 .se-slope:nth-child(even) .se-content h3 {
@@ -389,8 +389,8 @@ ul.menuItems {
 
 .se-slope:nth-child(odd) .se-content h3:before,
 .se-slope:nth-child(odd) .se-content h3:after {
-  border-right-color: blue;
-  border-left-color: blue; }
+  border-right-color: #1f4dc7;
+  border-left-color: #1f4dc7; }
 
 .se-slope:nth-child(odd) .se-content {
   -webkit-transform: rotate(-5deg);
@@ -406,7 +406,7 @@ ul.menuItems {
   -webkit-transform: rotate(5deg);
   -ms-transform: rotate(5deg);
   transform: rotate(5deg);
-  color: blue;
+  color: #1f4dc7;
   padding: 150px 100px 250px 100px; }
 
 .showChildrensButton {
@@ -421,11 +421,11 @@ ul.menuItems {
   display: none; }
 
 .showChildrensButton:hover {
-  background-color: blue;
+  background-color: #1f4dc7;
   color: white; }
 
 .showChildrensButton:active {
-  background-color: #0000fe;
+  background-color: #1f4dc6;
   color: white; }
 
 .autor {
@@ -485,17 +485,17 @@ nav.footer {
   left: auto; }
 
 .carousel-control {
-  color: blue; }
+  color: #1f4dc7; }
 
 .carousel-indicators {
   position: relative;
   bottom: 0; }
 
 .carousel-indicators .active {
-  background-color: blue; }
+  background-color: #1f4dc7; }
 
 .carousel-indicators li {
-  border: 1px solid blue; }
+  border: 1px solid #1f4dc7; }
 
 @media only screen and (max-width: 40em) {
   .logoContainer {
