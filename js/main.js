@@ -27,7 +27,7 @@ jQuery(window).resize(function () {
     setCarouselHeight('#carrusel_ProductSampling');
     resizeElementOnLoadAndResize();
 });
-jQuery( window ).scroll(function() {
+jQuery(window).scroll(function () {
     jQuery('.hiddenMenuElements').slideUp('slow');
 });
 jQuery(document).ready(function ($) {
@@ -47,11 +47,13 @@ jQuery(document).ready(function ($) {
     $(document).on('click touchstart', '.showChildrensButton', function (event) {
         event.preventDefault();
         $(this).parent().parent().siblings('.hiddenChildrens').slideToggle('slow');
-        if($(this).parent().parent().siblings('.hiddenChildrens').css('display')=='none'){
-            console.log('escondido');
+        if ($(this).parent().parent().siblings('.hiddenChildrens').is(':visible')) {
+            $(this).text('Hidden Some -')
+
         }
-        else{
-            console.log('mostrados');
+        else {
+            $(this).text('Show More +');
+
         }
     });
     $(document).on('click touchstart', '.dropMenu', function (event) {
@@ -60,14 +62,14 @@ jQuery(document).ready(function ($) {
     });
     $(document).on('click touchstart', '.clickable', function (event) {
         event.preventDefault();
-        if($(this).data("target")) {
+        if ($(this).data("target")) {
             console.log($(this));
             console.log($(this).data("target"));
             $('body').animate({scrollTop: ($($(this).data("target")).offset().top)}, 'slow')
             $('body').animatescroll({element: $(this).data("target")});
             $(this).parent().slideToggle('slow');
         }
-        else{
+        else {
             console.log($(this));
 
         }
@@ -160,7 +162,7 @@ jQuery(document).ready(function ($) {
 
     var totalAnimation = new TimelineMax();
 
-    totalAnimation.insert(TweenMax.fromTo($('.menuPrincipal'), 1, {top: '7%'},{top: '10%'}));
+    totalAnimation.insert(TweenMax.fromTo($('.menuPrincipal'), 1, {top: '7%'}, {top: '10%'}));
     var scene = new ScrollMagic.Scene({
         triggerElement: "#trigger1",
         duration: $('#content-wrapper').height()
