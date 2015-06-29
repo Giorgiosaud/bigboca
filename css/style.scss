@@ -446,7 +446,22 @@ ul.menuItems {
   color: #000;
   padding: 150px 100px 250px 100px;
 }
-
+.showChildrensButton {
+  text-align: center;
+  border: 1px solid rgb(6, 45, 121);
+  width: 12em;
+  margin: 2em auto;
+  border-radius: 1em;
+  padding: 0.5em;
+}
+.showChildrensButton:hover{
+  background-color: blue;
+  color:white;
+}
+.showChildrensButton:active{
+  background-color: darken(blue,0.2);
+  color:white;
+}
 .autor {
   text-align: left;
   font-size: 0.5em;
