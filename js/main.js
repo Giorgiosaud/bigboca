@@ -48,7 +48,7 @@ jQuery(document).ready(function ($) {
         event.preventDefault();
         $(this).parent().parent().siblings('.hiddenChildrens').slideToggle('slow');
         if ($(this).parent().parent().siblings('.hiddenChildrens').is(':visible')) {
-            $(this).text('Hidden Some -')
+            $(this).text('Hidden Some -');
 
         }
         else {
