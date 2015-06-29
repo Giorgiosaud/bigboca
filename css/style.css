@@ -414,6 +414,9 @@ ul.menuItems {
   font-size: 0.5em;
   margin-top: 1em; }
 
+.hiddenChildrens {
+  display: none; }
+
 nav.footer {
   width: 100%;
   position: fixed;

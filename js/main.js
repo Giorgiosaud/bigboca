@@ -44,6 +44,10 @@ jQuery(document).ready(function ($) {
     elementosComunes.anchoMenuCerrado = jQuery('.menuPrincipal').width();
 
     //acciones de click
+    $(document).on('click touchstart', '.showChildrensButton', function (event) {
+        event.preventDefault();
+        $(this).parent().parent().siblings('.hiddenChildrens').slideToggle('slow');
+    });
     $(document).on('click touchstart', '.dropMenu', function (event) {
         event.preventDefault();
         $('.hiddenMenuElements').slideToggle('slow');
