@@ -46,7 +46,6 @@ jQuery(document).ready(function ($) {
     //acciones de click
     $(document).on('click touchstart', '.showChildrensButton', function (event) {
         event.preventDefault();
-        console.log(that);
         var that = $(this);
         console.log(that.parent().siblings('.hiddenChildrens'));
         $(this).parent().siblings('.hiddenChildrens').slideToggle('slow', function () {
