@@ -637,7 +637,12 @@ nav.footer {
   left: 100%;
 
 }
-
+.hiddenContentOnLoad{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: $amarilloBB;
+}
 .mapBB {
   width: 90%;
   height: 60%;

@@ -521,6 +521,12 @@ nav.footer {
   top: 0;
   left: 100%; }
 
+.hiddenContentOnLoad {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: #ffe600; }
+
 .mapBB {
   width: 90%;
   height: 60%; }
