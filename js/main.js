@@ -47,6 +47,12 @@ jQuery(document).ready(function ($) {
     $(document).on('click touchstart', '.showChildrensButton', function (event) {
         event.preventDefault();
         $(this).parent().parent().siblings('.hiddenChildrens').slideToggle('slow');
+        if($(this).parent().parent().siblings('.hiddenChildrens').css('display')=='none'){
+            console.log('escondido');
+        }
+        else{
+            console.log('mostrados');
+        }
     });
     $(document).on('click touchstart', '.dropMenu', function (event) {
         event.preventDefault();
