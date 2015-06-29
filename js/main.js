@@ -123,6 +123,11 @@ jQuery(document).ready(function ($) {
         }
 
         , 'easeinour'))
+        .insert(TweenMax.to(
+            $('.hiddenContentOnLoad'),1,{
+                opacity:0
+            }
+        ))
         .add(TweenMax.from(
             $('.scrollDown'), 1, {
                 opacity: 0,
