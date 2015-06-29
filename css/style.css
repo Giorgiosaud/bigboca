@@ -97,7 +97,7 @@ body {
   background-color: #1f4dc7; }
 
 .blueBocaText {
-  color: #1f4dc7; }
+  color: #1f4dc7 !important; }
 
 .whiteboca {
   background-color: white; }
