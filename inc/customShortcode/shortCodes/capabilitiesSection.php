@@ -59,7 +59,7 @@ function capabilitiesSection_shortcode($atts)
                         $opacity2) . ' ), url("' . $urlBg['url'] . '") !important;  background-size: cover !important;';
                 if ($CapabilitiesDefinitionsIndex % 2 != 0) {
                     $iconoClass = 'iconoRight';
-                    $descriptionClass = 'descripcionRight';
+                    $descriptionClass = '';
                     $descriptionAlignment = 'center';
 
                 } else {
@@ -125,7 +125,7 @@ function capabilitiesSection_shortcode($atts)
                                         $opacity2) . ' ), url("' . $urlBg['url'] . '") !important;  background-size: cover !important;';
                                 if ($CapabilitiesDefinitionsIndexChild % 2 == 0) {
                                     $iconoClass = 'iconoRight';
-                                    $descriptionClass = 'descripcionRight';
+                                    $descriptionClass = '';
                                     $descriptionAlignment = 'center';
 
                                 } else {
