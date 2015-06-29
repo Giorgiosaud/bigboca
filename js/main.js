@@ -47,12 +47,12 @@ jQuery(document).ready(function ($) {
     $(document).on('click touchstart', '.showChildrensButton', function (event) {
         event.preventDefault();
         $(this).parent().parent().siblings('.hiddenChildrens').slideToggle('slow');
-        if ($(this).parent().parent().siblings('.hiddenChildrens').is(':visible')) {
+        if ($(this).parent().parent().siblings('.hiddenChildrens').is(':visible') == true) {
             $(this).text('Hidden Some -');
             console.log('less');
         }
         else {
-console.log('more');
+            console.log('more');
             $(this).text('Show More +');
 
         }
