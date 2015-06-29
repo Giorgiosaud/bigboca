@@ -92,7 +92,7 @@ function capabilitiesSection_shortcode($atts)
 
 
                     ?>
-                    <div id="<?= $id ?>" class="se-slope">
+                    <div id="<?= $id ?>" class="se-slope" style='<?= $style ?>' >
                         <article class="se-content">
                             <?= showCapability(get_field('icono'), $title, $content, 'center') ?>
                         </article>
@@ -100,12 +100,36 @@ function capabilitiesSection_shortcode($atts)
                     <?php
                     if ($childrens->have_posts()) {
                         while ($childrens->have_posts()) : $childrens->the_post();
+                            $id = get_field('id');
+                            $urlBg = get_field('imagendefondo');
+                            $color_fondo1 = get_field('color_fondo_1');
+                            $opacity1 = get_field('opacity_1');
+                            $color_fondo2 = get_field('color_fondo_2');
+                            $opacity2 = get_field('opacity_2');
+                            $style = 'background: -webkit-linear-gradient(' . hex2rgba($color_fondo1,
+                                    $opacity1) . ', ' . hex2rgba($color_fondo2, $opacity2) . '), url("' . $urlBg['url'] . '") !important;
+                             background: linear-gradient( ' . hex2rgba($color_fondo1,
+                                    $opacity1) . ', ' . hex2rgba($color_fondo2,
+                                    $opacity2) . ' ), url("' . $urlBg['url'] . '") !important;  background-size: cover !important;';
+                            if ($CapabilitiesDefinitionsIndex % 2 != 0) {
+                                $iconoClass = 'iconoRight';
+                                $descriptionClass = 'descripcionRight';
+                                $descriptionAlignment = 'right';
+
+                            } else {
+                                $iconoClass = 'iconoLeft';
+                                $descriptionClass = 'descripcionLeft';
+                                $descriptionAlignment = 'left';
+                            }
 
                             ?>
-                            <div id="<?= get_field('id'); ?>" class="se-slope">
+                            <div id="<?= $id ?>" class="se-slope" style='<?= $style ?>'>
                                 <article class="se-content">
-                                    <?= showCapability(get_field('icono'), get_the_title(),
-                                        get_the_content(), 'center', 'container') ?>
+                                    <div class="<?= $descriptionClass ?> col-xs-10 col-md-5">
+                                        <?= showCapability(get_field('icono'), get_the_title(), get_the_content(),
+                                            $descriptionAlignment) ?>
+                                    </div>
+                                    <div class="clearfix"></div>
                                 </article>
                             </div>
                         <?php
