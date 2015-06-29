@@ -44,6 +44,24 @@ jQuery(document).ready(function ($) {
     elementosComunes.anchoMenuCerrado = jQuery('.menuPrincipal').width();
 
     //acciones de click
+    $(document).on('click touchstart', '.showChildrensButton2', function (event) {
+        event.preventDefault();
+        var that = $(this);
+        //jQuery('.showChildrensButton2').parent().siblings('.hiddenChildrens').
+        //console.log(that.parent().siblings('.hiddenChildrens'));
+        $(this).parent().siblings('.hiddenChildrens').slideToggle('slow', function () {
+            if (!$(this).is(":visible")) {
+                console.log('aaa');
+                that.text('Show more +');
+
+            }
+            else {
+                console.log('bbb');
+                that.text('Show Less -');
+            }
+        });
+
+    });
     $(document).on('click touchstart', '.showChildrensButton', function (event) {
         event.preventDefault();
         var that = $(this);

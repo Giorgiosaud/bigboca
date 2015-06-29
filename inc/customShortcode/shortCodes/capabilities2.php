@@ -97,59 +97,57 @@ function capabilitiesSection_shortcode($atts)
                         <article class="se-content">
                             <div class="<?= $descriptionClass ?> col-xs-12 col-sm-10 col-md-8 col-sm-push-1 col-md-push-2">
                                 <?= showCapability(get_field('icono'), $title, $content, $descriptionAlignment) ?>
-                                <div class="showChildrensButton showChildrensButton2">
+                                <div class="showChildrensButton">
                                     Show More +
                                 </div>
                             </div>
-                    <div class="clearfix"></div>
+                            <div class="clearfix"></div>
+                        </article>
+                    </div>
                     <div class="hidden-slope"></div>
                     <div class="hiddenChildrens">
                         <?php
-                    if ($childrens->have_posts()) {
-                        $CapabilitiesDefinitionsIndexChild == 0;
-                        while ($childrens->have_posts()) : $childrens->the_post();
-                            $id = get_field('id');
-                            $CapabilitiesDefinitionsIndexChild ++;
-                            $urlBg = get_field('imagendefondo');
-                            $color_fondo1 = get_field('color_fondo_1');
-                            $opacity1 = get_field('opacity_1');
-                            $color_fondo2 = get_field('color_fondo_2');
-                            $opacity2 = get_field('opacity_2');
-                            $style = 'background: -webkit-linear-gradient(' . hex2rgba($color_fondo1,
-                                    $opacity1) . ', ' . hex2rgba($color_fondo2,
-                                    $opacity2) . '), url("' . $urlBg['url'] . '") !important;
+                        if ($childrens->have_posts()) {
+                            $CapabilitiesDefinitionsIndexChild == 0;
+                            while ($childrens->have_posts()) : $childrens->the_post();
+                                $id = get_field('id');
+                                $CapabilitiesDefinitionsIndexChild ++;
+                                $urlBg = get_field('imagendefondo');
+                                $color_fondo1 = get_field('color_fondo_1');
+                                $opacity1 = get_field('opacity_1');
+                                $color_fondo2 = get_field('color_fondo_2');
+                                $opacity2 = get_field('opacity_2');
+                                $style = 'background: -webkit-linear-gradient(' . hex2rgba($color_fondo1,
+                                        $opacity1) . ', ' . hex2rgba($color_fondo2,
+                                        $opacity2) . '), url("' . $urlBg['url'] . '") !important;
                              background: linear-gradient( ' . hex2rgba($color_fondo1,
-                                    $opacity1) . ', ' . hex2rgba($color_fondo2,
-                                    $opacity2) . ' ), url("' . $urlBg['url'] . '") !important;  background-size: cover !important;';
-                            if ($CapabilitiesDefinitionsIndexChild % 2 == 0) {
-                                $iconoClass = 'iconoRight';
-                                $descriptionClass = '';
-                                $descriptionAlignment = 'center';
+                                        $opacity1) . ', ' . hex2rgba($color_fondo2,
+                                        $opacity2) . ' ), url("' . $urlBg['url'] . '") !important;  background-size: cover !important;';
+                                if ($CapabilitiesDefinitionsIndexChild % 2 == 0) {
+                                    $iconoClass = 'iconoRight';
+                                    $descriptionClass = '';
+                                    $descriptionAlignment = 'center';
 
-                            } else {
-                                $iconoClass = 'iconoLeft';
-                                $descriptionClass = 'descripcionLeft';
-                                $descriptionAlignment = 'center';
-                            }
+                                } else {
+                                    $iconoClass = 'iconoLeft';
+                                    $descriptionClass = 'descripcionLeft';
+                                    $descriptionAlignment = 'center';
+                                }
 
-                            ?>
-<!--                            <div id="--><?//= $id ?><!--" class="se-slope" style='--><?//= $style ?><!--'>-->
-<!--                                <article class="se-content">-->
-                                    <div
-                                        class="<?= $descriptionClass ?> col-xs-12 col-sm-10 col-md-8 col-sm-push-1 col-md-push-2">
-                                        <?= showCapability(get_field('icono'), get_the_title(), get_the_content(),
-                                            $descriptionAlignment) ?>
-<!--                                    </div>-->
-                                    <div class="clearfix"></div>
-<!--                                </article>-->
-                            </div>
-                        <?php
-                        endwhile;
-                    }
-                    ?>
-                        <div class="clearfix"></div>
-                        </article>
-                    </div>
+                                ?>
+                                <div id="<?= $id ?>" class="se-slope" style='<?= $style ?>'>
+                                    <article class="se-content">
+                                        <div class="<?= $descriptionClass ?> col-xs-12 col-sm-10 col-md-8 col-sm-push-1 col-md-push-2">
+                                            <?= showCapability(get_field('icono'), get_the_title(), get_the_content(),
+                                                $descriptionAlignment) ?>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </article>
+                                </div>
+                            <?php
+                            endwhile;
+                        }
+                        ?>
                     </div>
                 <?php
                 } else {
@@ -157,8 +155,7 @@ function capabilitiesSection_shortcode($atts)
 
                     <div id="<?= $id ?>" class="se-slope" style='<?= $style ?>'>
                         <article class="se-content">
-                            <div
-                                class="<?= $descriptionClass ?> col-xs-12 col-sm-10 col-md-8 col-sm-push-1 col-md-push-2">
+                            <div class="<?= $descriptionClass ?> col-xs-12 col-sm-10 col-md-8 col-sm-push-1 col-md-push-2">
                                 <?= showCapability(get_field('icono'), get_the_title(), get_the_content(),
                                     $descriptionAlignment) ?>
                             </div>
