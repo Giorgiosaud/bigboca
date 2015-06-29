@@ -60,12 +60,12 @@ function capabilitiesSection_shortcode($atts)
                 if ($CapabilitiesDefinitionsIndex % 2 != 0) {
                     $iconoClass = 'iconoRight';
                     $descriptionClass = 'descripcionRight';
-                    $descriptionAlignment = 'right';
+                    $descriptionAlignment = 'center';
 
                 } else {
                     $iconoClass = 'iconoLeft';
                     $descriptionClass = 'descripcionLeft';
-                    $descriptionAlignment = 'left';
+                    $descriptionAlignment = 'center';
                 }
 
                 if (has_children()) {
@@ -125,12 +125,12 @@ function capabilitiesSection_shortcode($atts)
                                 if ($CapabilitiesDefinitionsIndexChild % 2 == 0) {
                                     $iconoClass = 'iconoRight';
                                     $descriptionClass = 'descripcionRight';
-                                    $descriptionAlignment = 'right';
+                                    $descriptionAlignment = 'center';
 
                                 } else {
                                     $iconoClass = 'iconoLeft';
                                     $descriptionClass = 'descripcionLeft';
-                                    $descriptionAlignment = 'left';
+                                    $descriptionAlignment = 'center';
                                 }
 
                                 ?>
