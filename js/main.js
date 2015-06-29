@@ -49,7 +49,7 @@ jQuery(document).ready(function ($) {
         console.log('touched');
         var that=$(this);
         $(this).parent().parent().siblings('.hiddenChildrens').slideToggle('slow',function(){
-
+            console.log($(this));
             if (!$(this).is(":visible")) {
                 that.text('Show +');
 
