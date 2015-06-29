@@ -1,11 +1,15 @@
-$amarilloBB:#ffe600;
-$blue:#1f4dc7;
+$amarilloBB: #ffe600;
+$blue: #1f4dc7;
 @import url(http://fonts.googleapis.com/css?family=Cherry+Cream+Soda|Chewy|Open+Sans:400,800,700,600|Open+Sans+Condensed:300,700,300italic);
 
 * {
   font-family: 'Open Sans', sans-serif;
 }
-body { font-size:62.5%; }
+
+body {
+  font-size: 62.5%;
+}
+
 @font-face {
   font-family: 'bigbocaicons';
   src: url('../fonts/fontello.eot?80740566');
@@ -16,7 +20,6 @@ body { font-size:62.5%; }
   font-weight: normal;
   font-style: normal;
 }
-
 
 /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
 /* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
@@ -65,16 +68,56 @@ body { font-size:62.5%; }
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
 
-.icon-sampling:before { content: '\4d'; } /* 'M' */
-.icon-marketing:before { content: '\65'; } /* 'e' */
-.icon-facebook:before { content: '\66'; } /* 'f' */
-.icon-intercept:before { content: '\69'; } /* 'i' */
-.icon-language:before { content: '\6c'; } /* 'l' */
-.icon-message:before { content: '\6d'; } /* 'm' */
-.icon-polybag:before { content: '\70'; } /* 'p' */
-.icon-supermarket:before { content: '\73'; } /* 's' */
-.icon-twitter:before { content: '\74'; } /* 't' */
-.icon-us:before { content: '\75'; } /* 'u' */
+.icon-sampling:before {
+  content: '\4d';
+}
+
+/* 'M' */
+.icon-marketing:before {
+  content: '\65';
+}
+
+/* 'e' */
+.icon-facebook:before {
+  content: '\66';
+}
+
+/* 'f' */
+.icon-intercept:before {
+  content: '\69';
+}
+
+/* 'i' */
+.icon-language:before {
+  content: '\6c';
+}
+
+/* 'l' */
+.icon-message:before {
+  content: '\6d';
+}
+
+/* 'm' */
+.icon-polybag:before {
+  content: '\70';
+}
+
+/* 'p' */
+.icon-supermarket:before {
+  content: '\73';
+}
+
+/* 's' */
+.icon-twitter:before {
+  content: '\74';
+}
+
+/* 't' */
+.icon-us:before {
+  content: '\75';
+}
+
+/* 'u' */
 
 /* 'u' */
 body {
@@ -83,6 +126,10 @@ body {
 
 .blueBoca {
   background-color: $blue;
+}
+
+.blueBocaText {
+  color: $blue;
 }
 
 .whiteboca {
@@ -318,19 +365,22 @@ body {
   margin-right: 0.5em;
 }
 
-nav.menuPrincipal,.menuSecundario {
+nav.menuPrincipal, .menuSecundario {
   position: fixed;
   top: 7%;
   margin-right: 1em;
   z-index: 300;
 }
-.clickable{
+
+.clickable {
   cursor: pointer;
 }
+
 .iconoMenu {
   margin: 10px 20px;
 }
-.hiddenMenuElements{
+
+.hiddenMenuElements {
   display: none;
 }
 
@@ -341,13 +391,15 @@ ul.menuItems {
   font-weight: bold;
   font-size: 2.5em;
   float: left;
-//  display: none;
+  //  display: none;
 }
+
 .imagenMenu {
   float: left;
   height: 60px;
   margin-top: -10px;
 }
+
 .se-container {
   display: block;
   width: 100%;
@@ -355,9 +407,11 @@ ul.menuItems {
   padding-top: 150px;
   margin-top: -20px;
 }
-.carousel-inner{
-  color:white;
+
+.carousel-inner {
+  color: white;
 }
+
 .se-slope {
   margin: 0 -50px;
   -webkit-transform-origin: left center;
@@ -388,7 +442,6 @@ ul.menuItems {
   margin: 0 auto;
   font-size: 2em;
 }
-
 
 .se-slope:nth-child(odd) .se-content h3 {
   background: $blue;
@@ -437,9 +490,11 @@ ul.menuItems {
   color: white;
   padding: 130px 100px 220px 100px;
 }
-.se-slope:first-child .se-content{
+
+.se-slope:first-child .se-content {
   padding: 150px 100px 250px 100px;
 }
+
 .se-slope:nth-child(even) .se-content {
   -webkit-transform: rotate(5deg);
   -ms-transform: rotate(5deg);
@@ -447,6 +502,7 @@ ul.menuItems {
   color: $blue;
   padding: 150px 100px 250px 100px;
 }
+
 .showChildrensButton {
   text-align: center;
   border: 1px solid rgb(6, 45, 121);
@@ -455,25 +511,31 @@ ul.menuItems {
   border-radius: 1em;
   padding: 0.5em;
 }
-.hidden-slope{
+
+.hidden-slope {
   display: none;
 }
-.showChildrensButton:hover{
+
+.showChildrensButton:hover {
   background-color: $blue;
-  color:white;
+  color: white;
 }
-.showChildrensButton:active{
-  background-color: darken($blue,0.2);
-  color:white;
+
+.showChildrensButton:active {
+  background-color: darken($blue, 0.2);
+  color: white;
 }
+
 .autor {
   text-align: left;
   font-size: 0.5em;
   margin-top: 1em;
 }
-.hiddenChildrens{
+
+.hiddenChildrens {
   display: none;
 }
+
 nav.footer {
   width: 100%;
   position: fixed;
@@ -564,6 +626,7 @@ nav.footer {
   padding-left: 30px !important;
   padding-right: 30px !important;
 }
+
 .contactUs {
   height: 100%;
   width: 100%;
@@ -574,11 +637,13 @@ nav.footer {
   left: 100%;
 
 }
-.mapBB{
+
+.mapBB {
   width: 90%;
   height: 60%;
 
 }
+
 #map-canvas {
   width: 90%;
   height: 50%;
