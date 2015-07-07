@@ -184,14 +184,14 @@ body {
 
 .descripcionRight {
   float: right;
-  text-align: justify;
+  text-align: right;
   margin-left: 2em;
   color: #1f4dc7;
   /*$blueraro*/ }
 
 .descripcionLeft {
   float: left;
-  text-align: justify;
+  text-align: left;
   margin-right: 2em;
   color: #fff;
   /*$blueraro*/ }
