@@ -1,6 +1,6 @@
 $amarilloBB: #ffe600;
 $blue: #1f4dc7;
-@import url(http://fonts.googleapis.com/css?family=Cherry+Cream+Soda|Chewy|Open+Sans:400,800,700,600|Open+Sans+Condensed:300,700,300italic);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800|Oswald:400,300,700);
 
 * {
   font-family: 'Open Sans', sans-serif;
@@ -664,4 +664,7 @@ nav.footer {
   background-color: rgba(197, 255, 248, 0.71);
   padding: 2em;
   border-radius: 10px;
+}
+.mensajeInicial{
+  font-family: 'Oswald', sans-serif;
 }
