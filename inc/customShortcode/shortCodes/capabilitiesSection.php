@@ -101,12 +101,12 @@ function capabilitiesSection_shortcode($atts)
                                 class="<?= $descriptionClass ?> col-xs-12 col-sm-10 col-md-8 col-sm-push-1 col-md-push-2">
                                 <?= showCapability(get_field('icono'), $title, $content, $descriptionAlignment) ?>
                                 <div class="showChildrensButton showChildrensButton2">
-                                    Show More +
+                                    Learn More +
                                 </div>
                             </div>
                             <div class="clearfix"></div>
                             <div class="hidden-slope"></div>
-                            <div class="hiddenChildrens">
+                            <div class="hiddenChildrens blueBocaText">
                                 <?php
                                 if ($childrens->have_posts()) {
                                     $CapabilitiesDefinitionsIndexChild == 0;
@@ -139,7 +139,7 @@ function capabilitiesSection_shortcode($atts)
                                         <!--                            <div id="--><?//= $id ?><!--" class="se-slope" style='--><?//= $style ?><!--'>-->
                                         <!--                                <article class="se-content">-->
                                         <div
-                                            class="<?= $descriptionClass ?> col-xs-12 col-sm-10 col-md-8 col-sm-push-1 col-md-push-2">
+                                            class="<?= $descriptionClass ?> blueBocaText col-xs-12 col-sm-10 col-md-8 col-sm-push-1 col-md-push-2">
                                             <?= showCapability(get_field('icono'), get_the_title(), get_the_content(),
                                                 $descriptionAlignment) ?>
                                             <!--                                    </div>-->
