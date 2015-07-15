@@ -145,7 +145,7 @@ jQuery(document).ready(function ($) {
     firstAnimation.insert(TweenMax.to($('.logoContainer'), 1, {height: 0, width: 0}));
     firstAnimation.insert(TweenMax.fromTo($('.scrollDown'), 4, {opacity: 1}, {opacity: 0}))
     firstAnimation.insert(TweenMax.fromTo($('.logoContainer'), 4, {opacity: 1}, {opacity: 0}))
-    // firstAnimation.insert(TweenMax.from($('.mensajeInicial:eq(0)'), 1, {marginTop: "-8em"}));
+    firstAnimation.insert(TweenMax.to($('.logoText'), 1, {opacity: 0}));
     firstAnimation.insert(TweenMax.from($('.se-slope:first-child .se-content:eq(0)'), 1, {y: "-14%"}));
     firstAnimation.insert(TweenMax.from($('.menuPrincipal'), 1, {marginLeft: -2 * elementosComunes.anchoMenuCerrado}));
     var scene = new ScrollMagic.Scene({
