@@ -2,6 +2,12 @@
 // Add Shortcode
 function intro_shortcode()
 {
+     extract(shortcode_atts(
+            array(
+               'comment'  => '"No other sampling program in the USA can expose your brand to this many Hispanic consumers under one roof, I guarantee this!”',
+                'author'   => 'Rhandy Taveras',
+            ), $atts)
+    );
     ob_start(); ?>
     <nav class="menuPrincipal">
 
@@ -50,6 +56,16 @@ function intro_shortcode()
             <div class="col-xs-12 brandText"><span >Big Boca Marketing</span></div>
         </div>
         <div class="clearfix"></div>
+        <div class="col-xs-11 text-center mensajeInicial">
+                    <?= $comment ?>
+                    <div class="autor">
+                        <?= $author ?>
+                        <br/>
+                        <?= $position ?>
+
+                    </div>
+                </div>
+                <div class="clearfix"></div>
         <div class="scrollDown">
             <img src="<?php echo get_template_directory_uri() ?>/img/scrollDown.png" height="178" width="144"
                  alt="scrolldown">
