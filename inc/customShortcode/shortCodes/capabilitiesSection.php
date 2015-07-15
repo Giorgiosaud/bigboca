@@ -19,7 +19,7 @@ function capabilitiesSection_shortcode($atts)
     <section id="CapabilitiesSection" class="se-container">
         <div id="<?= $id ?>" class="se-slope">
             <article class="se-content"
-                     style='color:white !important; background: -webkit-linear-gradient(rgba(0, 148, 255, 0.45), rgba(0, 81, 255, 0.45)), url("<?= $fondo ?>") !important;
+                     style='background: -webkit-linear-gradient(rgba(0, 148, 255, 0.45), rgba(0, 81, 255, 0.45)), url("<?= $fondo ?>") !important;
                          background: linear-gradient( rgba(0, 148, 255, 0.45), rgba(0, 81, 255, 0.45) ), url("<?= $fondo ?>") !important;'
                 >
                 <div class="col-xs-11 text-center mensajeInicial">
@@ -139,7 +139,7 @@ function capabilitiesSection_shortcode($atts)
                                         <!--                            <div id="--><?//= $id ?><!--" class="se-slope" style='--><?//= $style ?><!--'>-->
                                         <!--                                <article class="se-content">-->
                                         <div
-                                            class="<?= $descriptionClass ?> blueBocaText col-xs-12 col-sm-10 col-md-8 col-sm-push-1 col-md-push-2">
+                                            class="<?= $descriptionClass ?>  col-xs-12 col-sm-10 col-md-8 col-sm-push-1 col-md-push-2">
                                             <?= showCapability(get_field('icono'), get_the_title(), get_the_content(),
                                                 $descriptionAlignment) ?>
                                             <!--                                    </div>-->
