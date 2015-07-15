@@ -19,7 +19,7 @@ function capabilitiesSection_shortcode($atts)
     <section id="CapabilitiesSection" class="se-container">
         <div id="<?= $id ?>" class="se-slope">
             <article class="se-content"
-                     style='color:white; background: -webkit-linear-gradient(rgba(0, 148, 255, 0.45), rgba(0, 81, 255, 0.45)), url("<?= $fondo ?>") !important;
+                     style='color:white !important; background: -webkit-linear-gradient(rgba(0, 148, 255, 0.45), rgba(0, 81, 255, 0.45)), url("<?= $fondo ?>") !important;
                          background: linear-gradient( rgba(0, 148, 255, 0.45), rgba(0, 81, 255, 0.45) ), url("<?= $fondo ?>") !important;'
                 >
                 <div class="col-xs-11 text-center mensajeInicial">
