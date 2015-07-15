@@ -136,7 +136,7 @@ jQuery(document).ready(function ($) {
         .add(TweenMax.from(
             $('.scrollDown'), 1, {
                 opacity: 0,
-                marginTop: -2 * elementosComunes.alturaLogo
+                // marginTop: -2 * elementosComunes.alturaLogo
             }
         )
     );
