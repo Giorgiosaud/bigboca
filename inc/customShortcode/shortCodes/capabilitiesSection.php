@@ -7,8 +7,6 @@ function capabilitiesSection_shortcode($atts)
     // Attributes
     extract(shortcode_atts(
             array(
-                'comment'  => '"No other sampling program in the USA can expose your brand to this many Hispanic consumers under one roof, I guarantee this!”',
-                'author'   => 'Rhandy Taveras',
                 'position' => 'President, Big Boca Group.',
                 'fondo'    => 'http://bigboca.test/wp-content/uploads/2015/06/city.jpg',
                 'id'       => 'Capabilities'
