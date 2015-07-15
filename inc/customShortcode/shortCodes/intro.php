@@ -47,6 +47,7 @@ function intro_shortcode()
     <section class="intro text-center fullheight container-fluid" id="primerPanel">
         <div class="logoContainer">
             <img src="<?php header_image(); ?>" class="logoImg" alt="Logo">
+            Big Boca Marketing
         </div>
         <div class="clearfix"></div>
         <div class="scrollDown">
