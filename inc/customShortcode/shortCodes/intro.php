@@ -56,7 +56,7 @@ function intro_shortcode()
             <div class="col-xs-12 brandText"><span >Big Boca Marketing</span></div>
         </div>
         <div class="clearfix"></div>
-        <div class="col-xs-11 text-center mensajeInicial">
+        <div class="col-md-offset-3 col-md-5 col-xs-11 text-center mensajeInicial">
                     <?= $comment ?>
                     <div class="autor">
                         <?= $author ?>
