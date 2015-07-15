@@ -22,9 +22,7 @@ function usSection_shortcode($atts)
                  style='background: -webkit-linear-gradient(rgba(0, 148, 255, 0.45), rgba(0, 81, 255, 0.45)), url("<?= $fondo ?>") !important;
                      background: linear-gradient( rgba(0, 148, 255, 0.45), rgba(0, 81, 255, 0.45) ), url("<?= $fondo ?>") !important;  background-size: cover !important;'
             >
-            <div class="col-xs-11 text-center mensajeInicial">
-                <?php echo $comment ?>
-            </div>
+          
             <div class="clearfix"></div>
             <div class="iconoLeft interno col-xs-5 col-sm-2">
                 <span class="bigbocaicon icon-<?= $icono ?>" aria-hidden="true"></span>
