@@ -67,6 +67,7 @@ function intro_shortcode()
                 </div>
                 <div class="clearfix"></div>
         <div class="scrollDown">
+            <div class="col-xs-12">Scroll Down To Know Us Better</div>
             <img src="<?php echo get_template_directory_uri() ?>/img/scrollDown.png" height="178" width="144"
                  alt="scrolldown">
         </div>
