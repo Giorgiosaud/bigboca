@@ -40,7 +40,7 @@ function capabilitiesSection_shortcode($atts)
             'post_type'   => 'capabilities',
             'post_parent' => 0,
             'meta_key'    => 'orden',
-            'orderby'     => 'meta_value_num',
+            'orderby' => 'menu_order',
             'order'       => 'ASC'
             ));
         $CapabilitiesDefinitionsIndex = 0;
@@ -87,7 +87,7 @@ if (has_children()) {
         'post_parent' => $id2,
         'post_type'   => 'capabilities',
         'post_status' => 'publish',
-        'orderby'=>'menu_order',
+        'orderby' => 'menu_order',
         'order'=>'ASC'
         );
     $childrens = new WP_Query($childrenArgs);
