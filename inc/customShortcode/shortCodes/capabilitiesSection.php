@@ -58,7 +58,7 @@ function capabilitiesSection_shortcode($atts)
 background: linear-gradient( ' . hex2rgba($color_fondo1,
     $opacity1) . ', ' . hex2rgba($color_fondo2,
     $opacity2) . ' ), url("' . $urlBg['url'] . '") !important;  background-size: cover !important;';
-if ($CapabilitiesDefinitionsIndex % 2 == 0) {
+if ($CapabilitiesDefinitionsIndex % 2 != 0) {
     $iconoClass = 'iconoRight';
     $descriptionClass = '';
     $descriptionAlignment = 'center';
@@ -99,7 +99,7 @@ if (has_children()) {
     <div id="<?= $id ?>" class="se-slope" style='<?= $style ?>'>
         <article class="se-content">
             <div
-            class="<?= $descriptionClass ?> blueBocaText col-xs-12 col-sm-10 col-md-8 col-sm-push-1 col-md-push-2">
+            class="<?= $descriptionClass ?> col-xs-12 col-sm-10 col-md-8 col-sm-push-1 col-md-push-2">
             <?= showCapability(get_field('icono'), $title, $content, $descriptionAlignment) ?>
             <div class="showChildrensButton showChildrensButton2">
                 Learn More +
