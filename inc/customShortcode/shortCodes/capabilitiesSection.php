@@ -17,7 +17,7 @@ function capabilitiesSection_shortcode($atts)
     // Code
     ob_start();?>
     <div class="capabilitiesContainer">
-    <div class="fixedDown">
+    <div class="fixedDown col-xs-12">
     <div class="col-md-offset-3 col-md-5 col-xs-11 text-center mensajeInicial">
             <?= $comment ?>
             <div class="autor">
