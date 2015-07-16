@@ -639,7 +639,7 @@ nav.footer {
   // overflow: hidden;
 }
 .fixedDown {
-  // position: fixed;
+  position: relative;
   bacground-color:$blue;
   top: 0;
 }
