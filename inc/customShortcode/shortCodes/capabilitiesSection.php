@@ -140,7 +140,7 @@ if ($CapabilitiesDefinitionsIndexChild % 2 == 0) {
 <!--                            <div id="--><?//= $id ?><!--" class="se-slope" style='--><?//= $style ?><!--'>-->
 <!--                                <article class="se-content">-->
 <div
-class="<?= $descriptionClass ?> blueBocaText col-xs-12 col-sm-10 col-md-8 col-sm-push-1 col-md-push-2">
+class="<?= $descriptionClass ?> col-xs-12 col-sm-10 col-md-8 col-sm-push-1 col-md-push-2">
 <?= showCapability(get_field('icono'), get_the_title(), get_the_content(),
 $descriptionAlignment) ?>
 <!--                                    </div>-->
