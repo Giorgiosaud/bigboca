@@ -579,7 +579,10 @@ nav.footer {
   }
   .se-content {
     margin: 0 auto;
-    font-size: 1em;
+    font-size: 1.5em;
+  }
+  .detalle{
+  font-size: 1.5em;
   }
 }
 
@@ -642,7 +645,4 @@ nav.footer {
   position: relative;
   background-color:$blue;
   overflow: hidden;
-}
-.detalle{
-  font-size: 1em;
 }
