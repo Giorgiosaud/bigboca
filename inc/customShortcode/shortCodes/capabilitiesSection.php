@@ -99,7 +99,7 @@ if (has_children()) {
     <div id="<?= $id ?>" class="se-slope" style='<?= $style ?>'>
         <article class="se-content">
             <div
-            class="<?= $descriptionClass ?> col-xs-12 col-sm-10 col-md-8 col-sm-push-1 col-md-push-2">
+            class="<?= $descriptionClass ?> blueBocaText col-xs-12 col-sm-10 col-md-8 col-sm-push-1 col-md-push-2">
             <?= showCapability(get_field('icono'), $title, $content, $descriptionAlignment) ?>
             <div class="showChildrensButton showChildrensButton2">
                 Learn More +
