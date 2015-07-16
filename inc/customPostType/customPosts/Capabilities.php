@@ -23,7 +23,7 @@ function capabilities_post_type() {
         'label'               => __( 'capability', 'text_domain' ),
         'description'         => __( 'Capabilities Of The Company Big Boca', 'text_domain' ),
         'labels'              => $labels,
-        'supports'            => array( 'title', 'editor' ),
+        'supports'            => array( 'title', 'editor', 'page-attributes', ),
         'taxonomies'          => array( ),
         'hierarchical'        => true,
         'public'              => true,
