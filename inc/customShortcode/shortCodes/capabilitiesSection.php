@@ -107,7 +107,7 @@ if (has_children()) {
         </div>
         <div class="clearfix"></div>
         <div class="hidden-slope"></div>
-        <div class="hiddenChildrens blueBocaText">
+        <div class="hiddenChildrens">
             <?php
             if ($childrens->have_posts()) {
                 $CapabilitiesDefinitionsIndexChild == 0;
