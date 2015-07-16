@@ -58,7 +58,7 @@ function capabilitiesSection_shortcode($atts)
 background: linear-gradient( ' . hex2rgba($color_fondo1,
     $opacity1) . ', ' . hex2rgba($color_fondo2,
     $opacity2) . ' ), url("' . $urlBg['url'] . '") !important;  background-size: cover !important;';
-if ($CapabilitiesDefinitionsIndex % 2 != 0) {
+if ($CapabilitiesDefinitionsIndex % 2 == 0) {
     $iconoClass = 'iconoRight';
     $descriptionClass = '';
     $descriptionAlignment = 'center';
