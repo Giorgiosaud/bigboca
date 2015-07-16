@@ -12,11 +12,11 @@ body {
 
 @font-face {
   font-family: 'bigbocaicons';
-  src: url('../fonts/fontello.eot?80740566');
-  src: url('../fonts/fontello.eot?80740566#iefix') format('embedded-opentype'),
-  url('../fonts/fontello.woff?80740566') format('woff'),
-  url('../fonts/fontello.ttf?80740566') format('truetype'),
-  url('../fonts/fontello.svg?80740566#fontello') format('svg');
+  src: url('../fonts/big-boca.eot');
+  src: url('../fonts/big-boca.eot') format('embedded-opentype'),
+  url('../fonts/big-boca.woff') format('woff'),
+  url('../fonts/big-boca.ttf') format('truetype'),
+  url('../fonts/big-boca.svg') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -32,90 +32,55 @@ body {
 }
 */
 
-[class^="bigbocaicon-"]:before, [class*=" bigbocaicon-"]:before, .bigbocaicon {
+ [class^="bigbocaicon-"]:before, [class*=" bigbocaicon-"]:before,.bigbocaicon {
   font-family: "bigbocaicons";
   font-style: normal;
   font-weight: normal;
-  font-size: 1.8em;
   speak: none;
-
+ 
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
   margin-right: .2em;
   text-align: center;
   /* opacity: .8; */
-
+ 
   /* For safety - reset parent styles, that can break glyph codes*/
   font-variant: normal;
   text-transform: none;
-
+ 
   /* fix buttons height, for twitter bootstrap */
   line-height: 1em;
-
+ 
   /* Animation center compensation - margins should be symmetric */
   /* remove if not needed */
   margin-left: .2em;
-
+ 
   /* you can be more comfortable with increased icons size */
   /* font-size: 120%; */
-
+ 
   /* Font smoothing. That was taken from TWBS */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
+ 
   /* Uncomment for 3D effect */
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
 
-.icon-sampling:before {
-  content: '\4d';
-}
-
-/* 'M' */
-.icon-marketing:before {
-  content: '\65';
-}
-
-/* 'e' */
-.icon-facebook:before {
-  content: '\66';
-}
-
-/* 'f' */
-.icon-intercept:before {
-  content: '\69';
-}
-
-/* 'i' */
-.icon-language:before {
-  content: '\6c';
-}
-
-/* 'l' */
-.icon-message:before {
-  content: '\6d';
-}
-
-/* 'm' */
-.icon-polybag:before {
-  content: '\70';
-}
-
-/* 'p' */
-.icon-supermarket:before {
-  content: '\73';
-}
-
-/* 's' */
-.icon-twitter:before {
-  content: '\74';
-}
-
-/* 't' */
-.icon-us:before {
-  content: '\75';
-}
+.icon-message:before { content: '\41'; } /* 'A' */
+.icon-bocaicon:before { content: '\42'; } /* 'B' */
+.icon-polybag:before { content: '\44'; } /* 'D' */
+.icon-facebook:before { content: '\46'; } /* 'F' */
+.icon-marketing:before { content: '\47'; } /* 'G' */
+.icon-language:before { content: '\48'; } /* 'H' */
+.icon-bigbocaicon:before { content: '\4c'; } /* 'L' */
+.icon-shop:before { content: '\4d'; } /* 'M' */
+.icon-sampling:before { content: '\4f'; } /* 'O' */
+.icon-produc:before { content: '\50'; } /* 'P' */
+.icon-hands:before { content: '\53'; } /* 'S' */
+.icon-twitter:before { content: '\54'; } /* 'T' */
+.icon-us:before { content: '\55'; } /* 'U' */
+.icon-intercept:before { content: '\56'; } /* 'V' */
 
 /* 'u' */
 
