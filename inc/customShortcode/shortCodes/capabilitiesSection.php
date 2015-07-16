@@ -125,7 +125,7 @@ if (has_children()) {
 background: linear-gradient( ' . hex2rgba($color_fondo1,
     $opacity1) . ', ' . hex2rgba($color_fondo2,
     $opacity2) . ' ), url("' . $urlBg['url'] . '") !important;  background-size: cover !important;';
-if ($CapabilitiesDefinitionsIndexChild % 2 == 0) {
+if ($CapabilitiesDefinitionsIndexChild % 2 != 0) {
     $iconoClass = 'iconoRight';
     $descriptionClass = '';
     $descriptionAlignment = 'center';
