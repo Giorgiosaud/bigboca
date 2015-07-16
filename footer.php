@@ -20,8 +20,6 @@
                 <a href=""> <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a>
             </div>
         </div>
-
-
     </nav>
     <?php wp_footer(); ?>
 </footer>
