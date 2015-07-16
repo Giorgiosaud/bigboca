@@ -131,7 +131,7 @@ if ($CapabilitiesDefinitionsIndexChild % 2 != 0) {
     $descriptionAlignment = 'center';
 
 } else {
-    $iconoClass = 'iconoLeft';
+    $iconoClass = 'iconoLeft blueBocaText';
     $descriptionClass = 'descripcionLeft';
     $descriptionAlignment = 'center';
 }
