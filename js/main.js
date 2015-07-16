@@ -183,16 +183,16 @@ jQuery(document).ready(function ($) {
         .setTween(fourthAnimation)
         //.addIndicators({name: "Mensaje As Effective"})
         .addTo(controller);
-    // var fifthAnimation = new TimelineMax();
-    // fifthAnimation.insert(TweenMax.from($('.mensajeInicial:eq(1)'), 1, {marginTop: "-10em"}));
+    var fifthAnimation = new TimelineMax();
+    fifthAnimation.insert(TweenMax.from($('.fixedDown'), 1, {height: 0}));
 
-    // var scene = new ScrollMagic.Scene({
-    //     triggerElement: '.se-container:nth-of-type(3)',
-    //     duration: jQuery('.se-container').find('.iconoLeft:eq(1)').closest('.se-content').outerHeight()
-    // })
-    //     .setTween(fifthAnimation)
-    //     //.addIndicators({name: "Capabilities"})
-    //     .addTo(controller);
+    var scene = new ScrollMagic.Scene({
+        triggerElement: '.se-container:nth-of-type(3)',
+        duration: jQuery('.se-container').find('.iconoLeft:eq(1)').closest('.se-content').outerHeight()
+    })
+        .setTween(fifthAnimation)
+        //.addIndicators({name: "Capabilities"})
+        .addTo(controller);
 
     var totalAnimation = new TimelineMax();
 
