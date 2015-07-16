@@ -187,7 +187,7 @@ jQuery(document).ready(function ($) {
     fifthAnimation.insert(TweenMax.from($('.fixedDown'), 1, {height: 0}));
 
     var scene = new ScrollMagic.Scene({
-        triggerElement: '#capabilitiesContainer',
+        triggerElement: '.capabilitiesContainer',
         duration: jQuery('.se-container').find('.iconoLeft:eq(1)').closest('.se-content').outerHeight()
     })
         .setTween(fifthAnimation)
