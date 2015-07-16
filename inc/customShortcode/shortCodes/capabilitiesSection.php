@@ -17,44 +17,36 @@ function capabilitiesSection_shortcode($atts)
     // Code
     ob_start();?>
     <div class="capabilitiesContainer">
-        <section id="CapabilitiesSection" class="se-container">
-            <!-- <div id="<?= $id ?>" class="se-slope">
-                <article class="se-content"
-                style='background: -webkit-linear-gradient(rgba(0, 148, 255, 0.45), rgba(0, 81, 255, 0.45)), url("<?= $fondo ?>") !important;
-                background: linear-gradient( rgba(0, 148, 255, 0.45), rgba(0, 81, 255, 0.45) ), url("<?= $fondo ?>") !important;'
-                >
-                <div class="col-xs-11 text-center mensajeInicial">
-                    <?= $comment ?>
-                    <div class="autor">
-                        <?= $author ?>
-                        <br/>
-                        <?= $position ?>
+        <div class="col-xs-11 text-center mensajeInicial">
+            <?= $comment ?>
+            <div class="autor">
+                <?= $author ?>
+                <br/>
+                <?= $position ?>
 
-                    </div>
-                </div>
-                <div class="clearfix"></div>
-            </article>
-        </div> -->
-        <?php
-        $query = new WP_Query(array(
-            'post_type'   => 'capabilities',
-            'post_parent' => 0,
-            'meta_key'    => 'orden',
-            'orderby' => 'menu_order',
-            'order'       => 'ASC'
-            ));
-        $CapabilitiesDefinitionsIndex = 0;
-        if ($query->have_posts()) {
-            while ($query->have_posts()) : $query->the_post();
-            $CapabilitiesDefinitionsIndex ++;
-            $id = get_field('id');
-            $urlBg = get_field('imagendefondo');
-            $color_fondo1 = get_field('color_fondo_1');
-            $opacity1 = get_field('opacity_1');
-            $color_fondo2 = get_field('color_fondo_2');
-            $opacity2 = get_field('opacity_2');
-            $style = 'background: -webkit-linear-gradient(' . hex2rgba($color_fondo1,
-                $opacity1) . ', ' . hex2rgba($color_fondo2, $opacity2) . '), url("' . $urlBg['url'] . '") !important;
+            </div>
+        </div>
+        <section id="CapabilitiesSection" class="se-container">
+            <?php
+            $query = new WP_Query(array(
+                'post_type'   => 'capabilities',
+                'post_parent' => 0,
+                'meta_key'    => 'orden',
+                'orderby' => 'menu_order',
+                'order'       => 'ASC'
+                ));
+            $CapabilitiesDefinitionsIndex = 0;
+            if ($query->have_posts()) {
+                while ($query->have_posts()) : $query->the_post();
+                $CapabilitiesDefinitionsIndex ++;
+                $id = get_field('id');
+                $urlBg = get_field('imagendefondo');
+                $color_fondo1 = get_field('color_fondo_1');
+                $opacity1 = get_field('opacity_1');
+                $color_fondo2 = get_field('color_fondo_2');
+                $opacity2 = get_field('opacity_2');
+                $style = 'background: -webkit-linear-gradient(' . hex2rgba($color_fondo1,
+                    $opacity1) . ', ' . hex2rgba($color_fondo2, $opacity2) . '), url("' . $urlBg['url'] . '") !important;
 background: linear-gradient( ' . hex2rgba($color_fondo1,
     $opacity1) . ', ' . hex2rgba($color_fondo2,
     $opacity2) . ' ), url("' . $urlBg['url'] . '") !important;  background-size: cover !important;';
