@@ -23,7 +23,7 @@ function capabilities_post_type() {
         'label'               => __( 'capability', 'text_domain' ),
         'description'         => __( 'Capabilities Of The Company Big Boca', 'text_domain' ),
         'labels'              => $labels,
-        'supports'            => array( 'title', 'editor', 'page-attributes', ),
+        'supports'            => array( 'title', 'editor' ),
         'taxonomies'          => array( ),
         'hierarchical'        => true,
         'public'              => true,
@@ -37,7 +37,7 @@ function capabilities_post_type() {
         'has_archive'         => true,
         'exclude_from_search' => false,
         'publicly_queryable'  => true,
-        'capability_type'     => 'post',
+        'capability_type'     => 'page',
     );
     register_post_type( 'capabilities', $args );
 
