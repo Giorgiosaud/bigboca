@@ -71,8 +71,11 @@ if (has_children()) {
     $urlBg = get_field('imagendefondo');
     $color_fondo1 = get_field('color_fondo_1');
     $color_fondo2 = get_field('color_fondo_2');
-    $style = 'background: -webkit-linear-gradient(' . $color_fondo1 . ', ' . $color_fondo2 . '), url("' . $urlBg['url'] . '") !important;
-    background: linear-gradient( ' . $color_fondo1 . ', ' . $color_fondo2 . ' ), url("' . $urlBg['url'] . '") !important';
+    $style = 'background: -webkit-linear-gradient(' . hex2rgba($color_fondo1,
+                    $opacity1) . ', ' . hex2rgba($color_fondo2, $opacity2) . '), url("' . $urlBg['url'] . '") !important;
+background: linear-gradient( ' . hex2rgba($color_fondo1,
+    $opacity1) . ', ' . hex2rgba($color_fondo2,
+    $opacity2) . ' ), url("' . $urlBg['url'] . '") !important;  background-size: cover !important;';
     $colorIndicadores = get_field('color_de_indicadores');
     $colorBordeIndicadores = get_field('color_de_borde_indicadores');
     $colorDeFlechas = get_field('color_de_flechas');
