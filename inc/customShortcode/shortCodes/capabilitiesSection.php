@@ -65,7 +65,7 @@ if ($CapabilitiesDefinitionsIndex % 2 != 0) {
 
 } else {
     $iconoClass = 'iconoLeft';
-    $descriptionClass = 'descripcionLeft';
+    $descriptionClass = 'descripcionLeft blueBocaText';
     $descriptionAlignment = 'center';
 }
 
@@ -131,7 +131,7 @@ if ($CapabilitiesDefinitionsIndexChild % 2 != 0) {
     $descriptionAlignment = 'center';
 
 } else {
-    $iconoClass = 'iconoLeft blueBocaText';
+    $iconoClass = 'iconoLeft';
     $descriptionClass = 'descripcionLeft';
     $descriptionAlignment = 'center';
 }
