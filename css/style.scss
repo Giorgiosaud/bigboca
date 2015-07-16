@@ -636,9 +636,10 @@ nav.footer {
   margin-top: 1em;
 }
 .capabilitiesContainer{
-  overflow: hidden;
+  // overflow: hidden;
 }
 .fixedDown {
-  position: fixed;
+  // position: fixed;
+  bacground-color:$blue;
   top: 0;
 }
