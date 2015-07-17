@@ -147,8 +147,7 @@ jQuery(document).ready(function ($) {
         {
         bottom:0
         }
-            )
-   
+   )
    );
 });
     var firstAnimation = new TimelineMax();
