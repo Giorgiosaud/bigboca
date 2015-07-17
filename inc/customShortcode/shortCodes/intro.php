@@ -45,7 +45,9 @@ function intro_shortcode()
             <img src="<?php header_image(); ?>" class="imagenMenu" alt="menuLogo">
 
         </nav>
-        <div class="hiddenContentOnLoad"></div>
+        <div class="hiddenContentOnLoad">
+            spinner
+        </div>
         <section class="intro text-center fullheight container-fluid" id="primerPanel">
             <div class="logoContainer">
                 <img src="<?php header_image(); ?>" class="logoImg" alt="Logo">
