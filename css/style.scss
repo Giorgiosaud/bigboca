@@ -1,6 +1,5 @@
 $amarilloBB: #ffe600;
-// $amarilloBB: #DBC600;
-
+$clearShadow:rgb(197, 186, 76) 2px 2px 4px;
 $blue: rgb(11, 115, 160);
 $claras:#fff;
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800|Oswald:400,300,700);
@@ -193,6 +192,7 @@ body {
   text-align: left;
   padding-left: 1em;
   color: $claras;
+  text-shadow:$clearShadow;
   overflow: hidden;
 }
 
@@ -233,6 +233,7 @@ body {
   z-index: 10;
   position: relative;
   color: $claras;
+  text-shadow:$clearShadow;
   font-size: 1.5em;
   img {
     height: 80%;
@@ -293,6 +294,7 @@ body {
 
 .mensajeInicial, #mensajeInicial {
   color: $claras;
+  text-shadow:$clearShadow;
   font-family: 'Cherry Cream Soda', cursive;
   font-size: 3em;
   font-weight: 100;
@@ -308,6 +310,7 @@ body {
 
 #segundoMensaje {
   color: $claras;
+  text-shadow:$clearShadow;
   font-family: 'Cherry Cream Soda', cursive;
   font-size: 1.5em;
   font-weight: 100;
@@ -352,6 +355,7 @@ ul.menuItems {
   list-style: none;
   background-color: #ffe600;
   color: $claras;
+  text-shadow:$clearShadow;
   font-weight: bold;
   font-size: 2.5em;
   float: left;
@@ -374,6 +378,7 @@ ul.menuItems {
 
 .carousel-inner {
   color: $claras;
+  text-shadow:$clearShadow;
 }
 
 .se-slope {
@@ -452,6 +457,7 @@ ul.menuItems {
   -ms-transform: rotate(-5deg);
   transform: rotate(-5deg);
   color: $claras;
+  text-shadow:$clearShadow;
   padding: 130px 100px 220px 100px;
 }
 
@@ -483,11 +489,13 @@ ul.menuItems {
 .showChildrensButton:hover {
   background-color: $blue;
   color: $claras;
+  text-shadow:$clearShadow;
 }
 
 .showChildrensButton:active {
   background-color: darken($blue, 0.2);
   color: $claras;
+  text-shadow:$clearShadow;
 }
 
 .autor {
@@ -518,6 +526,7 @@ nav.footer {
 
 .contacto {
   color: $claras;
+  text-shadow:$clearShadow;
   border: solid white 3px;
   font-weight: bolder;
   padding: 0 0.5em;
@@ -529,6 +538,7 @@ nav.footer {
 
 .followUs {
   color: $claras;
+  text-shadow:$clearShadow;
   border: solid white 3px;
   font-weight: lighter;
   font-size: 1em;
@@ -546,11 +556,13 @@ nav.footer {
   margin-top: 10px;
   font-size: 1.5em;
   color: $claras;
+  text-shadow:$clearShadow;
   margin-right: 2em;
 }
 
 .redesSociales a {
   color: $claras;
+  text-shadow:$clearShadow;
 }
 
 .carousel-control.rightChild {
@@ -586,6 +598,7 @@ nav.footer {
   }
   .detalle{
   font-size: 1.5em;
+  text-shadow:$clearShadow;
   }
 }
 
