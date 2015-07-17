@@ -184,7 +184,7 @@ jQuery(document).ready(function ($) {
         //.addIndicators({name: "Mensaje As Effective"})
         .addTo(controller);
     var fifthAnimation = new TimelineMax();
-    fifthAnimation.insert(TweenMax.from($('.fixedDown'), 1, {height: 0}));
+    fifthAnimation.insert(TweenMax.from($('.fixedDown'), 1, {height: 0,'padding':0}));
 
     var scene = new ScrollMagic.Scene({
         triggerElement: '.capabilitiesContainer',
