@@ -10,7 +10,6 @@ function contact_shortcode($atts)
     // Code
     ob_start();?>
     <section class="contactUs">
-        <div class="container">
             <div class="mapBB">
                 <div id="map-canvas"></div>
             </div>
@@ -48,7 +47,6 @@ function contact_shortcode($atts)
                 <?php
             }
             ?>
-        </div>
     </section>
 
 
