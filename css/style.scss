@@ -623,6 +623,12 @@ nav.footer {
   width: 100%;
   background-color: $amarilloBB;
   z-index: 350;
+  display: table;
+  vertical-align: middle;
+}
+.spinnerLoad{
+  display: table-cell;
+  vertical-align: middle;
 }
 
 .mapBB {
