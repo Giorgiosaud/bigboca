@@ -1,5 +1,6 @@
 $amarilloBB: #ffe600;
 $blue: rgb(11, 115, 160);
+$claras:#fff;
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800|Oswald:400,300,700);
 
 * {
@@ -189,7 +190,7 @@ body {
   margin-right: -2em;
   text-align: left;
   padding-left: 1em;
-  color: white;
+  color: $claras;
   overflow: hidden;
 }
 
@@ -229,7 +230,7 @@ body {
   opacity: 1;
   z-index: 10;
   position: relative;
-  color: white;
+  color: $claras;
   font-size: 1.5em;
   img {
     height: 80%;
@@ -289,7 +290,7 @@ body {
 }
 
 .mensajeInicial, #mensajeInicial {
-  color: white;
+  color: $claras;
   font-family: 'Cherry Cream Soda', cursive;
   font-size: 3em;
   font-weight: 100;
@@ -304,7 +305,7 @@ body {
 }
 
 #segundoMensaje {
-  color: white;
+  color: $claras;
   font-family: 'Cherry Cream Soda', cursive;
   font-size: 1.5em;
   font-weight: 100;
@@ -348,7 +349,7 @@ nav.menuPrincipal, .menuSecundario {
 ul.menuItems {
   list-style: none;
   background-color: #ffe600;
-  color: white;
+  color: $claras;
   font-weight: bold;
   font-size: 2.5em;
   float: left;
@@ -370,7 +371,7 @@ ul.menuItems {
 }
 
 .carousel-inner {
-  color: white;
+  color: $claras;
 }
 
 .se-slope {
@@ -448,7 +449,7 @@ ul.menuItems {
   -webkit-transform: rotate(-5deg);
   -ms-transform: rotate(-5deg);
   transform: rotate(-5deg);
-  color: white;
+  color: $claras;
   padding: 130px 100px 220px 100px;
 }
 
@@ -479,12 +480,12 @@ ul.menuItems {
 
 .showChildrensButton:hover {
   background-color: $blue;
-  color: white;
+  color: $claras;
 }
 
 .showChildrensButton:active {
   background-color: darken($blue, 0.2);
-  color: white;
+  color: $claras;
 }
 
 .autor {
@@ -514,7 +515,7 @@ nav.footer {
 }
 
 .contacto {
-  color: white;
+  color: $claras;
   border: solid white 3px;
   font-weight: bolder;
   padding: 0 0.5em;
@@ -525,7 +526,7 @@ nav.footer {
 }
 
 .followUs {
-  color: white;
+  color: $claras;
   border: solid white 3px;
   font-weight: lighter;
   font-size: 1em;
@@ -542,12 +543,12 @@ nav.footer {
   margin-left: 2em;
   margin-top: 10px;
   font-size: 1.5em;
-  color: white;
+  color: $claras;
   margin-right: 2em;
 }
 
 .redesSociales a {
-  color: white;
+  color: $claras;
 }
 
 .carousel-control.rightChild {
