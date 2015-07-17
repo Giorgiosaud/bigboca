@@ -5,49 +5,50 @@ function contact_shortcode($atts)
 
     // Attributes
     extract(shortcode_atts(
-            array(), $atts)
+        array(), $atts)
     );
     // Code
     ob_start();?>
     <section class="contactUs">
-        <div class="mapBB">
-            <div id="map-canvas"></div>
-        </div>
-        <div class="clearfix"></div>
-        <article class="container">
-            <?php if (isset($_POST['email'])) {
-                ?>
-                <h1>
-                    Gracias Por Contactarnos
-                </h1>
-            <?php
+        <div class="container">
+            <div class="mapBB">
+                <div id="map-canvas"></div>
+            </div>
+            <div class="clearfix"></div>
+            <article class="container">
+                <?php if (isset($_POST['email'])) {
+                    ?>
+                    <h1>
+                        Gracias Por Contactarnos
+                    </h1>
+                    <?php
+                }
+                else{
+                    ?>
+
+                    <form id="formularioDeContacto">
+                        <div class="col-xs-6">
+                            <div class="form-group">
+                                <label for="message">Contact Message</label>
+                                <textarea class="form-control" rows="3" required></textarea>
+                            </div>
+                        </div>
+                        <div class="col-xs-6">
+                            <div class="form-group">
+                                <label for="exampleInputEmail2">Email</label>
+                                <input type="email" class="form-control" id="exampleInputEmail2"
+                                placeholder="jane.doe@example.com" required>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-default ">Send Contact</button>
+                            </div>
+                        </div>
+                    </form>
+                </article>
+                <?php
             }
-            else{
             ?>
-
-            <form id="formularioDeContacto">
-                <div class="col-xs-6">
-                <div class="form-group">
-                    <label for="message">Contact Message</label>
-                    <textarea class="form-control" rows="3" required></textarea>
-                </div>
-                </div>
-                <div class="col-xs-6">
-                <div class="form-group">
-                    <label for="exampleInputEmail2">Email</label>
-                    <input type="email" class="form-control" id="exampleInputEmail2"
-                           placeholder="jane.doe@example.com" required>
-                </div>
-                    <div class="text-center">
-                <button type="submit" class="btn btn-default ">Send Contact</button>
-                    </div>
-                </div>
-            </form>
-        </article>
-        <?php
-        }
-        ?>
-
+        </div>
     </section>
 
 
