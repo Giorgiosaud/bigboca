@@ -139,9 +139,15 @@ jQuery(document).ready(function ($) {
    .add(TweenMax.from(
     $('.scrollDown'), 1, {
         opacity: 0,
-        'bottom':$('.footer').outerHeight()+$('.scrollDown').outerHeight()
             }
             )
+   .add(TweenMax.fromTo(
+    $('.scrollDown'), 1, {
+        'bottom':$('.footer').outerHeight()+$('.scrollDown').outerHeight(),
+        bottom:0
+            }
+            )
+   
    );
 });
     var firstAnimation = new TimelineMax();
