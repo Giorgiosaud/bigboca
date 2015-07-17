@@ -37,6 +37,7 @@ function intro_shortcode()
                         <?php
                         endwhile;
                     }
+                    wp_reset_query();
                     ?>
                 </div>
 
