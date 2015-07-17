@@ -2,6 +2,7 @@ $amarilloBB: #ffe600;
 $clearShadow:rgb(197, 186, 76) 2px 2px 4px;
 $blue: rgb(11, 115, 160);
 $claras:#fff;
+$fuenteO: 'Oswald', sans-serif;
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800|Oswald:400,300,700);
 
 * {
@@ -301,7 +302,7 @@ body {
 .mensajeInicial, #mensajeInicial {
   color: $claras;
   text-shadow:$clearShadow;
-  font-family: 'Cherry Cream Soda', cursive;
+  font-family: $fuenteO;
   font-size: 3em;
   font-weight: 100;
   border: solid white 7px;
@@ -317,7 +318,7 @@ body {
 #segundoMensaje {
   color: $claras;
   text-shadow:$clearShadow;
-  font-family: 'Cherry Cream Soda', cursive;
+  font-family: $fuenteO;
   font-size: 1.5em;
   font-weight: 100;
   border: solid white 7px;
@@ -619,6 +620,9 @@ nav.footer {
 .contactUs {
   height: 100%;
   width: 100%;
+  font-family: $fuenteO;
+  color: $claras;
+  text-shadow:$clearShadow;
   background-color: $amarilloBB;
   position: fixed;
   z-index: 110;
@@ -659,11 +663,11 @@ nav.footer {
   padding: 2em;
   border-radius: 10px;
 }
-.mensajeInicial{
-  font-family: 'Oswald', sans-serif;
+.mensajeInicial > *{
+  font-family: $fuenteO;
 }
 .brandText {
-  font-family: 'Oswald', sans-serif;
+  font-family: $fuenteO;
   font-size: 3em;
   font-weight: bold;
   color: rgb(11, 115, 160);
