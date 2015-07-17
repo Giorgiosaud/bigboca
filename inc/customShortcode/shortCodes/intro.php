@@ -47,14 +47,12 @@ function intro_shortcode()
             </nav>
             <div class="hiddenContentOnLoad">
                 <div class="spinnerLoad">
-                    <div class="progress">
-                      <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
-                        <span class="sr-only">45% Complete</span>
+                    <div class="progress col-xs-4 col-xs-push-4 text-center">
+                      <img src="<?php template_directory_uri()?>/img/717.GIF" alt="Loader">
                     </div>
                 </div>
-            </div>
-        </div>
-        <section class="intro text-center fullheight container-fluid" id="primerPanel">
+          </div>
+          <section class="intro text-center fullheight container-fluid" id="primerPanel">
             <div class="logoContainer">
                 <img src="<?php header_image(); ?>" class="logoImg" alt="Logo">
                 <div class="col-xs-12 brandText"><span class="logoText">Big Boca Marketing</span></div>
