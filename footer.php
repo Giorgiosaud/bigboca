@@ -5,12 +5,14 @@
  * Date: 10/6/15
  * Time: 4:54 PM
  */?>
+ <div class="scrollDown">
+    <div class="col-xs-12">Scroll Down To Know Us Better</div>
+    <img src="<?php echo get_template_directory_uri() ?>/img/scrollDown.png" height="178" width="144" alt="scrolldown">
+    
+    <div class="clearfix"></div>
+</div>
 <footer>
     <nav class="footer container-fluid">
-    <div class="scrollDown">
-                <div class="col-xs-12">Scroll Down To Know Us Better</div>
-                <img src="<?php echo get_template_directory_uri() ?>/img/scrollDown.png" height="178" width="144" alt="scrolldown">
-            </div>
         <div class="informacionFooter">
             <div class="contacto col-xs-push-6">
                 Contact

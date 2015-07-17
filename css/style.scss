@@ -232,10 +232,15 @@ body {
   opacity: 1;
   z-index: 10;
   position: relative;
-  color: $claras;
-  text-shadow:$clearShadow;
+  color: #fff;
+  text-shadow: #c5ba4c 2px 2px 4px;
   font-size: 1em;
-  text-align:center;
+  position: fixed;
+  text-align: center;
+  bottom: 116px;
+  margin: auto;
+  left: 0;
+  right: 0;
   img {
     height: 300%;
     width: auto;
