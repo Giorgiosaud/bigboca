@@ -47,33 +47,37 @@ function intro_shortcode()
             </nav>
             <div class="hiddenContentOnLoad">
                 <div class="spinnerLoad">
-                    spinner
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
+                        <span class="sr-only">45% Complete</span>
+                    </div>
                 </div>
             </div>
-            <section class="intro text-center fullheight container-fluid" id="primerPanel">
-                <div class="logoContainer">
-                    <img src="<?php header_image(); ?>" class="logoImg" alt="Logo">
-                    <div class="col-xs-12 brandText"><span class="logoText">Big Boca Marketing</span></div>
-                </div>
-                <div class="clearfix"></div>
-                <div class="col-md-offset-3 col-md-5 col-xs-11 text-center mensajeInicial mensajeInicio">
-                    <?= $comment ?>
-                </div>
-                <div class="clearfix"></div>
-                <div class="scrollDown">
-                    <div class="col-xs-12">Scroll Down To Know Us Better</div>
-                    <img src="<?php echo get_template_directory_uri() ?>/img/scrollDown.png" height="178" width="144"
-                    alt="scrolldown">
-                </div>
+        </div>
+        <section class="intro text-center fullheight container-fluid" id="primerPanel">
+            <div class="logoContainer">
+                <img src="<?php header_image(); ?>" class="logoImg" alt="Logo">
+                <div class="col-xs-12 brandText"><span class="logoText">Big Boca Marketing</span></div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-md-offset-3 col-md-5 col-xs-11 text-center mensajeInicial mensajeInicio">
+                <?= $comment ?>
+            </div>
+            <div class="clearfix"></div>
+            <div class="scrollDown">
+                <div class="col-xs-12">Scroll Down To Know Us Better</div>
+                <img src="<?php echo get_template_directory_uri() ?>/img/scrollDown.png" height="178" width="144"
+                alt="scrolldown">
+            </div>
 
-            </section>
-            <div id="trigger1"></div>
+        </section>
+        <div id="trigger1"></div>
 
-            <?php
+        <?php
 
-            $myvariable = ob_get_clean();
+        $myvariable = ob_get_clean();
 
-            return $myvariable;
-        }
+        return $myvariable;
+    }
 
-        add_shortcode('intro', 'intro_shortcode');
+    add_shortcode('intro', 'intro_shortcode');
