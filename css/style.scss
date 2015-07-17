@@ -610,6 +610,9 @@ nav.footer {
   .scrollDown{
     display: none;
   }
+  .mapBB{
+    height: 50%;
+  }
 }
 
 .sinPaddingHorizontal {
@@ -628,6 +631,8 @@ nav.footer {
   z-index: 110;
   top: 0;
   left: 100%;
+   font-size: 2em;
+
 
 }
 .hiddenContentOnLoad{
