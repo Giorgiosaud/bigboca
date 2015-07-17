@@ -141,6 +141,7 @@ jQuery(document).ready(function ($) {
         opacity: 0,
             }
             )
+   )
    .add(TweenMax.fromTo(
     $('.scrollDown'), 1, {
         'bottom':$('.footer').outerHeight()+$('.scrollDown').outerHeight()},
