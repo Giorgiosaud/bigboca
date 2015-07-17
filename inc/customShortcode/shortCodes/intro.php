@@ -2,11 +2,7 @@
 // Add Shortcode
 function intro_shortcode()
 {
-   extract(shortcode_atts(
-    array(
-     'comment'    => 'We escort brands into the Hispanic space,at the consumer’s most convenient time and place.',
-     ), $atts)
-   );
+    $comment=get_field('intro_message');
    ob_start(); ?>
    <nav class="menuPrincipal">
 
