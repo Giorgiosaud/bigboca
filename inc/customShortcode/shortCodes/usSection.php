@@ -79,6 +79,7 @@ function usSection_shortcode($atts)
         <?php
         endwhile;
     }
+    wp_reset_query();
 
         ?>
 
