@@ -594,26 +594,7 @@ nav.footer {
   border: 1px solid $blue;
 }
 
-@media only screen and (max-width: 40em) {
-  .logoContainer {
-    height: 50%;
-    padding: 15%;
-  }
-  .se-content {
-    margin: 0 auto;
-    font-size: 1.5em;
-  }
-  .detalle{
-  font-size: 1.5em;
-  text-shadow:$clearShadow;
-  }
-  .scrollDown{
-    display: none;
-  }
-  .mapBB{
-    height: 50%;
-  }
-}
+
 
 .sinPaddingHorizontal {
   padding-left: 30px !important;
@@ -686,4 +667,32 @@ nav.footer {
   background-color:$amarilloBB;
   padding:10em 0 10em 0;
   overflow: hidden;
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 40em) {
+  .logoContainer {
+    height: 50%;
+    padding: 15%;
+  }
+  .se-content {
+    margin: 0 auto;
+    font-size: 1.5em;
+  }
+  .detalle{
+  font-size: 1.5em;
+  text-shadow:$clearShadow;
+  }
+  .scrollDown{
+    display: none;
+  }
+  .mapBB{
+    height: 50%;
+  }
 }
