@@ -2,18 +2,13 @@
 // Add Shortcode
 function usSection_shortcode($atts)
 {
-
-    // Attributes
-    extract(shortcode_atts(
-            array(
-                'comment'    => 'We escort brands into the Hispanic space,at the consumer’s most convenient time and place.',
-                'tittle'     => 'Us',
-                'definition' => 'Big Boca is a direct to consumer Hispanic sampling and experiential agency established in NYC and Florida. We are rooted within the Hispanic communities we serve and are at the forefront of critical information. This provides us the exclusive advantage of knowing this market’s wants, needs and feedback - consistently!',
-                'icono'      => '',
-                'fondo'      => 'http://bigboca.test/wp-content/uploads/2015/06/city.jpg',
-                'id'         => 'UsIntro'
-            ), $atts)
-    );
+    $tittle=get_field('us_tittle');
+    $definition=get_field('us_definition');
+    $icono=get_field('us_icono');
+    $fondo=get_field('us_fondo');
+    $id=get_field('us_id');
+    $fondo=$fondo['url'];
+    
     // Code
     ob_start();?>
     <section id="UsSection" class="se-container">
