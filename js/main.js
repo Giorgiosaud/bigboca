@@ -106,40 +106,44 @@ jQuery(document).ready(function ($) {
             TweenMax.to($('.contactUs'), 1.5, {
                 left: ofsetLeft
             })
-        )
+            )
 
     });
-    var tl1 = new TimelineMax();
-    tl1.add(TweenMax.fromTo(
-        $('.logoContainer'), 1.5,
-        {
-            marginTop: -2 * elementosComunes.alturaLogo + "px",
-            opacity: 0,
-            ease: Cubic.easeOut
-        },
-        {
-            marginTop: 10,
-            opacity: 1
-        }
+    $(window).bind("load", function() {
+   // code here
 
-        , 'easeinour'))
-        .insert(TweenMax.to(
-            $('.hiddenContentOnLoad'),1,{
-                opacity:0,
-            }
-        ))
-        .add(TweenMax.to(
-            $('.hiddenContentOnLoad'),0.1,{
-                'display':'none'
-            }
-        ))
-        .add(TweenMax.from(
-            $('.scrollDown'), 1, {
-                opacity: 0,
+   var tl1 = new TimelineMax();
+   tl1.add(TweenMax.fromTo(
+    $('.logoContainer'), 1.5,
+    {
+        marginTop: -2 * elementosComunes.alturaLogo + "px",
+        opacity: 0,
+        ease: Cubic.easeOut
+    },
+    {
+        marginTop: 10,
+        opacity: 1
+    }
+
+    , 'easeinour'))
+   .insert(TweenMax.to(
+    $('.hiddenContentOnLoad'),1,{
+        opacity:0,
+    }
+    ))
+   .add(TweenMax.to(
+    $('.hiddenContentOnLoad'),0.1,{
+        'display':'none'
+    }
+    ))
+   .add(TweenMax.from(
+    $('.scrollDown'), 1, {
+        opacity: 0,
                 // marginTop: -2 * elementosComunes.alturaLogo
             }
-        )
-    );
+            )
+   );
+});
     var firstAnimation = new TimelineMax();
 
     firstAnimation.insert(TweenMax.to($('.logoContainer'), 1, {height: 0, width: 0}));
@@ -153,57 +157,57 @@ jQuery(document).ready(function ($) {
         triggerElement: "#trigger1",
         duration: $('.se-container :nth-of-type(1)').height()
     })
-        .setTween(firstAnimation)
-        .addTo(controller);
+    .setTween(firstAnimation)
+    .addTo(controller);
     var secondAnimation = new TimelineMax();
     secondAnimation.insert(TweenMax.from($('.se-container').first().find('.iconoLeft:eq(0)'), 1, {width: 0}));
     var scene = new ScrollMagic.Scene({
         triggerElement: ".se-slope:nth-of-type(1)",
         duration: jQuery('.se-container').find('.iconoLeft:eq(0)').closest('.se-content').outerHeight()
     })
-        .setTween(secondAnimation)
+    .setTween(secondAnimation)
         //.addIndicators({name: "Mostrar Us"})
         .addTo(controller);
-    var thirdAnimation = new TimelineMax();
-    thirdAnimation.insert(TweenMax.from($('.iconoRight'), 1, {width: 0}));
-    var scene = new ScrollMagic.Scene({
-        triggerElement: '.se-slope:nth-of-type(2)',
-        duration: jQuery('.se-container').find('.iconoRight:eq(0)').closest('.se-content').first().outerHeight()
-    })
+        var thirdAnimation = new TimelineMax();
+        thirdAnimation.insert(TweenMax.from($('.iconoRight'), 1, {width: 0}));
+        var scene = new ScrollMagic.Scene({
+            triggerElement: '.se-slope:nth-of-type(2)',
+            duration: jQuery('.se-container').find('.iconoRight:eq(0)').closest('.se-content').first().outerHeight()
+        })
         .setTween(thirdAnimation)
         //.addIndicators({name: "Mostrar We Speak The Language"})
         .addTo(controller);
-    var fourthAnimation = new TimelineMax();
-    fourthAnimation.insert(TweenMax.from($('.se-container').first().find('.iconoLeft:eq(1)'), 1, {width: 0}));
+        var fourthAnimation = new TimelineMax();
+        fourthAnimation.insert(TweenMax.from($('.se-container').first().find('.iconoLeft:eq(1)'), 1, {width: 0}));
     //fourthAnimation.insert(TweenMax.from($('.se-slope:eq(2)'), 1, {y: "-40%"}));
     var scene = new ScrollMagic.Scene({
         triggerElement: '.se-slope:nth-of-type(3)',
         duration: jQuery('.se-container').find('.iconoLeft:eq(1)').closest('.se-content').outerHeight()
     })
-        .setTween(fourthAnimation)
+    .setTween(fourthAnimation)
         //.addIndicators({name: "Mensaje As Effective"})
         .addTo(controller);
-    var fifthAnimation = new TimelineMax();
-    fifthAnimation.insert(TweenMax.from($('.fixedDown'), 1, {height: 0,'padding':0}));
+        var fifthAnimation = new TimelineMax();
+        fifthAnimation.insert(TweenMax.from($('.fixedDown'), 1, {height: 0,'padding':0}));
 
-    var scene = new ScrollMagic.Scene({
-        triggerElement: '.capabilitiesContainer',
-        duration: jQuery('.se-container').find('.iconoLeft:eq(1)').closest('.se-content').outerHeight()
-    })
+        var scene = new ScrollMagic.Scene({
+            triggerElement: '.capabilitiesContainer',
+            duration: jQuery('.se-container').find('.iconoLeft:eq(1)').closest('.se-content').outerHeight()
+        })
         .setTween(fifthAnimation)
         //.addIndicators({name: "Capabilities"})
         .addTo(controller);
 
-    var totalAnimation = new TimelineMax();
+        var totalAnimation = new TimelineMax();
 
-    totalAnimation.insert(TweenMax.fromTo($('.menuPrincipal'), 1, {top: '7%'}, {top: '10%'}));
-    var scene = new ScrollMagic.Scene({
-        triggerElement: "#trigger1",
-        duration: $('#content-wrapper').height()
-    })
+        totalAnimation.insert(TweenMax.fromTo($('.menuPrincipal'), 1, {top: '7%'}, {top: '10%'}));
+        var scene = new ScrollMagic.Scene({
+            triggerElement: "#trigger1",
+            duration: $('#content-wrapper').height()
+        })
         .setTween(totalAnimation)
         //.addIndicators({name: "Mensaje As Effective"})
         .addTo(controller);
 
-});
+    });
 
