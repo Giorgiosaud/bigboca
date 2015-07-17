@@ -153,7 +153,7 @@ jQuery(document).ready(function ($) {
     firstAnimation.insert(TweenMax.to($('.mensajeInicio'),4,{marginTop:'18em'}));
     firstAnimation.insert(TweenMax.from($('.se-slope:first-child .se-content:eq(0)'), 1, {y: "-14%"}));
     firstAnimation.insert(TweenMax.from($('.menuPrincipal'), 1, {marginLeft: -2 * elementosComunes.anchoMenuCerrado}));
-    firstAnimation.insert(TweenMax.fromTo($('.scrollDown'), 1, {bottom:$('.footer').outerHeight()+$('.scrollDown').outerHeight()},{bottom:0}));
+    firstAnimation.insert(TweenMax.fromTo($('.scrollDown'), 1, {bottom:$('.footer').outerHeight()+$('.scrollDown').outerHeight()+$('.scrollDown> img').outerHeight()},{bottom:0}));
     var scene = new ScrollMagic.Scene({
         triggerElement: "#trigger1",
         duration: $('.se-container :nth-of-type(1)').height()
