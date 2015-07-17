@@ -8,7 +8,7 @@
  <div class="scrollDown">
     <div class="col-xs-12">Scroll Down To Know Us Better</div>
     <img src="<?php echo get_template_directory_uri() ?>/img/scrollDown.png" height="178" width="144" alt="scrolldown">
-    
+
     <div class="clearfix"></div>
 </div>
 <footer>
@@ -21,9 +21,8 @@
                 Follow Us
             </div>
             <div class="redesSociales">
-                <a href=""> <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a>
-                <a href=""> <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a>
-                <a href=""> <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a>
+                <a href=""> <span class="bigbocaicon icon-facebook" aria-hidden="true"></span></a>
+                <a href=""> <span class="bigbocaicon icon-twitter" aria-hidden="true"></span></a>
             </div>
         </div>
     </nav>
