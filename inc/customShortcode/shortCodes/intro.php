@@ -47,9 +47,7 @@ function intro_shortcode()
             </nav>
             <div class="hiddenContentOnLoad">
                 <div class="spinnerLoad">
-                    <div class="progress col-xs-4 col-xs-push-4 text-center">
                       <img src="<?= get_template_directory_uri()?>/img/717.GIF" alt="Loader">
-                    </div>
                 </div>
           </div>
           <section class="intro text-center fullheight container-fluid" id="primerPanel">
