@@ -139,7 +139,7 @@ jQuery(document).ready(function ($) {
    .add(TweenMax.from(
     $('.scrollDown'), 1, {
         opacity: 0,
-        bottom:$('.footer').outerHeight()
+        'bottom':$('.footer').outerHeight()+$('.scrollDown').outerHeight()
             }
             )
    );
