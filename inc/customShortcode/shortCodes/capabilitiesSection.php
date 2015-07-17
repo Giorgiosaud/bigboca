@@ -3,22 +3,17 @@
 
 function capabilitiesSection_shortcode($atts)
 {
-
-    // Attributes
-    extract(shortcode_atts(
-        array(
-            'comment'  => '"No other sampling program in the USA can expose your brand to this many Hispanic consumers under one roof, I guarantee this!”',
-            'author'   => 'Rhandy Taveras',
-            'position' => 'President, Big Boca Group.',
-            'fondo'    => 'http://bigboca.test/wp-content/uploads/2015/06/city.jpg',
-            'id'       => 'Capabilities'
-            ), $atts)
-    );
+    $comment=get_field('capabilities_comment');
+    $author=get_field('capabilities_author');
+    $position=get_field('capablities_position');
+    $fondo=get_field('capabilities_fondo');
+    $fondo=$fondo['url'];
+    $id=get_field('capabilities_id');
     // Code
     ob_start();?>
     <div class="capabilitiesContainer">
     <div class="fixedDown col-xs-12">
-    <div class="col-md-offset-3 col-md-5 col-xs-11 text-center mensajeInicial">
+    <div class="col-md-offset-2 col-md-7 col-xs-11 text-center mensajeInicial">
             <?= $comment ?>
             <div class="autor">
                 <?= $author ?>
