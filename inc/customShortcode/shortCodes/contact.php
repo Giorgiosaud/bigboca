@@ -24,7 +24,7 @@ function contact_shortcode($atts)
                 }
                 else{
                     ?>
-
+                    <div class="contenedorFormulario">
                     <form id="formularioDeContacto">
                         <div class="col-xs-6">
                             <div class="form-group">
@@ -43,6 +43,7 @@ function contact_shortcode($atts)
                             </div>
                         </div>
                     </form>
+                    </div>
                 </article>
                 <?php
             }
