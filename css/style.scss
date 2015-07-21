@@ -312,6 +312,7 @@ body {
   z-index: 1;
   display: block;
   margin-bottom: 1em;
+    background-color: rgb(11, 115, 160);
 }
 
 #segundoMensaje {
@@ -505,7 +506,7 @@ ul.menuItems {
 }
 
 .autor {
-  text-align: left;
+  text-align: right;
   font-size: 0.5em;
   margin-top: 1em;
 }
@@ -664,7 +665,7 @@ nav.footer {
 .fixedDown {
   position: relative;
   background-color:$amarilloBB;
-  padding:10em 0 10em 0;
+  padding:20em 0 20em 0;
   overflow: hidden;
 }
 
