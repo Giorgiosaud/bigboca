@@ -28,13 +28,13 @@ function contact_shortcode($atts)
                         <div class="col-xs-6">
                             <div class="form-group">
                                 <label for="message">Contact Message</label>
-                                <textarea class="form-control" rows="3" required></textarea>
+                                <textarea name="message" class="form-control" rows="3" required></textarea>
                             </div>
                         </div>
                         <div class="col-xs-6">
                             <div class="form-group">
                                 <label for="exampleInputEmail2">Email</label>
-                                <input type="email" class="form-control" id="exampleInputEmail2"
+                                <input type="email" name="email" class="form-control" id="exampleInputEmail2"
                                 placeholder="jane.doe@example.com" required>
                             </div>
                             <div class="text-center">

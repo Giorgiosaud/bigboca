@@ -31,6 +31,10 @@ jQuery(window).scroll(function () {
     jQuery('.hiddenMenuElements').slideUp('slow');
 });
 jQuery(document).ready(function ($) {
+    $('#formularioDeContacto').submit(function(event){
+        e.preventDefault;
+        console.log($(this).serialize());
+    });
     controller = new ScrollMagic.Controller({
         globalSceneOptions: {
             triggerHook: (0.8)
