@@ -35,6 +35,9 @@ jQuery(document).ready(function ($) {
         event.preventDefault;
         console.log($(this).serialize());
     });
+    $('#submitForm').click(function(event) {
+       event.preventDefault;
+   });
     controller = new ScrollMagic.Controller({
         globalSceneOptions: {
             triggerHook: (0.8)
@@ -143,8 +146,8 @@ jQuery(document).ready(function ($) {
    .add(TweenMax.from(
     $('.scrollDown'), 1, {
         opacity: 0,
-            }
-            )
+    }
+    )
    )
    ;
 });

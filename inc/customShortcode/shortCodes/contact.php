@@ -38,7 +38,7 @@ function contact_shortcode($atts)
                                 placeholder="jane.doe@example.com" required>
                             </div>
                             <div class="text-center">
-                                <button type="submit" class="btn btn-default ">Send Contact</button>
+                                <button type="submit" class="btn btn-default" id="submitForm">Send Contact</button>
                             </div>
                         </div>
                     </form>
