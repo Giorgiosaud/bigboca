@@ -32,7 +32,7 @@ jQuery(window).scroll(function () {
 });
 jQuery(document).ready(function ($) {
     $('#formularioDeContacto').submit(function(event){
-        e.preventDefault;
+        event.preventDefault;
         console.log($(this).serialize());
     });
     controller = new ScrollMagic.Controller({
