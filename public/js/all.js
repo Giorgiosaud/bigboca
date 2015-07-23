@@ -13429,6 +13429,7 @@ jQuery(window).resize(function () {
 });
 jQuery(document).ready(function ($) {
     $('#formularioDeContacto').submit(function(event){
+        return false;
         event.preventDefault;
         console.log('Enviado');
     });
