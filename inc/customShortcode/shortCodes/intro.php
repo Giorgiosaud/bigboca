@@ -5,6 +5,7 @@ function intro_shortcode()
     $comment=get_field('intro_message');
     $icono=get_field('us_icono');
     $id=get_field('us_id');
+    $tittle=get_field('us_tittle');
     ob_start(); ?>
     <nav class="menuPrincipal">
 
@@ -16,7 +17,7 @@ function intro_shortcode()
             </li>
             <li class="clearfix"></li>
             <div class="hiddenMenuElements">
-                <li class="clickable" data-target="#<?= $id ?>">Us<span class="bigbocaicon icon-<?= $icono ?>" aria-hidden="true"></span></li>
+                <li class="clickable" data-target="#<?= $id ?>"><?= $tittle ?><span class="bigbocaicon icon-<?= $icono ?>" aria-hidden="true"></span></li>
                     <?php
                     $query = new WP_Query(array(
                         'post_type' => array('us'),
@@ -41,7 +42,7 @@ function intro_shortcode()
                         $name=get_field('capabilities_menu');
                         $icono=get_field('capabilities_icon');
                         ?>
-                        <li class="clickable" data-target="#<?= $id ?>"><?=$name?><span class="bigbocaicon icon-<?= $icono ?>" aria-hidden="true"></span></li>
+                        <li class="clickable" data-target="#<?= $id ?>"><?= $name ?><span class="bigbocaicon icon-<?= $icono ?>" aria-hidden="true"></span></li>
                         <?php
                     $query = new WP_Query(array(
                         'post_type' => array('capabilities'),
