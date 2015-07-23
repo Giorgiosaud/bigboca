@@ -39,7 +39,7 @@ function intro_shortcode()
                         wp_reset_query();
                         $id=get_field('capabilities_id');
                         $name=get_field('capabilities_menu');
-                        $name=get_field('capabilities_icon');
+                        $icono=get_field('capabilities_icon');
                         ?>
                         <li class="clickable" data-target="#<?= $id ?>"><?=$name?><span class="bigbocaicon icon-<?= $icono ?>" aria-hidden="true"></span></li>
                         <?php
