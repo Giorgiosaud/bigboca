@@ -12,7 +12,8 @@
     "files": [
         "inc/stylesandscripts.php",
         "inc/header_customization.php",
-        "inc/customPostType/customPosts.php",
+        "inc/customPostType/customPosts/usDefinition.php",
+        "inc/customPostType/customPosts/Capabilities.php",
         "inc/customShortcode/shortcodes.php"
     ]
   }
