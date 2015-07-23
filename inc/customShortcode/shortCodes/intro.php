@@ -18,7 +18,6 @@ function intro_shortcode()
                     class="bigbocaicon icon-us iconoMenu"
                     aria-hidden="true"></span></li>
                     <?php
-                    $icono=get_field('us_icono');
                     $query = new WP_Query(array(
                         'post_type' => array('us', 'capabilities'),
                         'meta_key'  => 'orden_en_menu',
