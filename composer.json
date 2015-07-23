@@ -1,0 +1,29 @@
+{
+    "name": "jorgelsaud/bigboca",
+    "description": "Bigboca WP theme",
+    "authors": [
+        {
+            "name": "Giorgiosaud",
+            "email": "jorgelsaud@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+    "psr-4": {"Zonapro\\Bigboca\\": "inc/"},
+    "files": [
+      "files/usCustomPostType.php",
+      "files/shortcodes/introSchotcode.php",
+      "files/shortcodes/usSchotcode.php",
+      "files/shortcodes/ownBrandSchotcode.php",
+      "files/shortcodes/firstStepsSchotcode.php",
+      "files/shortcodes/CustomizedFactorySchotcode.php",
+      "files/shortcodes/BotonfirstStepsSchotcode.php",
+      "files/shortcodes/fullpageSchortcode.php",
+      "files/shortcodes/sectionSchortcode.php",
+      "files/shortcodes/slideSchortcode.php",
+      "files/customizer/mainCustomizations.php",
+      "files/customizer/othersCustomizations.php"
+
+    ]
+  }
+}

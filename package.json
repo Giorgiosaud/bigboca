@@ -1,0 +1,28 @@
+{
+  "name": "BigbocaWeb",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Wordpress Bigboca Theme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/giorgiosaud/bigboca.git"
+  },
+  "author": "Giorgiosaud",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/giorgiosaud/bigboca/issues"
+  },
+  "homepage": "https://github.com/giorgiosaud/bigboca",
+  "devDependencies": {
+    "gulp": "^3.8.8",
+    "laravel-elixir": "*"
+  },
+  "dependencies": {
+    "bootstrap-sass": "^3.3.5",
+    "vinyl-paths": "^1.0.0"
+  }
+}
