@@ -19,7 +19,7 @@ function intro_shortcode()
                 <li class="clickable" data-target="#<?= $id ?>">Us<span class="bigbocaicon icon-<?= $icono ?>" aria-hidden="true"></span></li>
                     <?php
                     $query = new WP_Query(array(
-                        'post_type' => array('us', 'capabilities'),
+                        'post_type' => array('us'),
                         'meta_key'  => 'orden_en_menu',
                         'orderby'   => 'meta_value_num',
                         'order'     => 'ASC'
