@@ -29,16 +29,16 @@ function bigboca_customize_register($wp_customize)
         )
     );
     $wp_customize->add_control(
-        'bigboca_mail_to', array(
-        'label' => 'Contact Email address',
-        'section' => 'bigboca_contact_section',
+        'bigboca_map_lat', array(
+        'label' => 'Latitude',
+        'section' => 'bigboca_map_logo_section',
         'type' => 'number',
         'priority' => 10,
     ) );
     $wp_customize->add_control(
-        'bigboca_map_lat', array(
-        'label' => 'Latitude',
-        'section' => 'bigboca_map_logo_section',
+        'bigboca_mail_to', array(
+        'label' => 'Contact Email',
+        'section' => 'bigboca_contact_section',
         'type' => 'text',
         'priority' => 10,
     ) );
