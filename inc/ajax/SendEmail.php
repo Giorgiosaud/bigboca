@@ -12,14 +12,17 @@ add_action('wp_ajax_enviar_correo', 'enviar_correo_callback');
 add_action('wp_ajax_nopriv_enviar_correo', 'enviar_correo_callback');
 
 function enviar_correo_callback() {
-	$message=$_POST['message'];
-	echo $message;
-	// $multiple_recipients = array(
-		// 'info@bigboca.com',
-		// $_POST['email'],
-		// 'jorgelsaud@gmail.com');
-	// $subj = 'Contact Us Web';
-	// $body = $_POST['message'];
-	// wp_mail( $multiple_recipients, $subj, $body );
+	$multiple_recipients = array(
+		'info@bigboca.com',
+		'jorgelsaud@gmail.com');
+	$subj = 'Contact Us Web';
+	$body = $_POST['message'];
+	wp_mail( $multiple_recipients, $subj, $body );
+	$subj = 'Contact Us Web (copied)';
+	$body = $_POST['message'];
+	wp_mail( $_POST['email'], $subj, $body );
+	echo 'We will put in touch with you as soon as possible';
+		
+
     die(); // Siempre hay que terminar con die
 }
