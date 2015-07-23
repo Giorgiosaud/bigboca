@@ -25,6 +25,7 @@ function contact_shortcode($atts)
                 else{
                     ?>
                     <form id="formularioDeContacto" method="POST">
+                        <input type="hidden" name="action" value="enviar_correo">
                         <div class="col-xs-6">
                             <div class="form-group">
                                 <label for="message">Contact Message</label>
