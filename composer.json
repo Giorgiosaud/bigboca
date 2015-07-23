@@ -10,7 +10,8 @@
     "require": {},
     "autoload": {
     "files": [
-        "inc/stylesandscripts.php"
+        "inc/stylesandscripts.php",
+        "inc/header_customization.php"
     ]
   }
 }
