@@ -1,9 +1,14 @@
 jQuery(document).ready(function ($) {
     $('#formularioDeContacto').submit(function(event){
-        // return false;
         event.preventDefault();
         console.log($('#formularioDeContacto').serialize());
-        
+        $.post( "test.php", { $('#formularioDeContacto').serialize() } )
+        .done(function(data){
+            console.log('hecho');
+        })
+        .fail(function(){
+            alert( "error" );
+        });
     });
     controller = new ScrollMagic.Controller({
         globalSceneOptions: {
