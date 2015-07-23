@@ -1,10 +1,11 @@
 jQuery(document).ready(function ($) {
     $('#formularioDeContacto').submit(function(event){
         event.preventDefault;
-        console.log($(this).serialize());
+        console.log('Enviado');
     });
     $('#submitForm').click(function(event) {
        event.preventDefault;
+       console.log('Enviado');
    });
     controller = new ScrollMagic.Controller({
         globalSceneOptions: {
