@@ -1,4 +1,5 @@
 <?php
+
 // wp_enqueue_script( 'mi-script-ajax',get_bloginfo('stylesheet_directory') . '/js/ajax-search.js', array( 'jquery' ) );
 
 // ahora declaramos la variable MyAjax y le pasamos el valor url (wp-admin/admin-ajax.php) al script ajax-search.js
