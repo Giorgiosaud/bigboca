@@ -24,7 +24,7 @@ function contact_shortcode($atts)
                 }
                 else{
                     ?>
-                    <form id="formularioDeContacto">
+                    <form id="formularioDeContacto" method="POST">
                         <div class="col-xs-6">
                             <div class="form-group">
                                 <label for="message">Contact Message</label>
