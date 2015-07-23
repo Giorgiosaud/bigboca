@@ -9,7 +9,7 @@ function bigboca_customize_register($wp_customize)
     $wp_customize->add_section('bigboca_contact_section', array(
         'title'       => __('Contact Us Settings', 'bigboca'),
         'priority'    => 30,
-        'description' => 'Settings of contacts page',
+        'description' => 'Settings of Contacts page',
     ));
     $wp_customize->add_setting('bigboca_map_logo');
     $wp_customize->add_setting('bigboca_map_lat');
@@ -39,7 +39,6 @@ function bigboca_customize_register($wp_customize)
         'bigboca_mail_to', array(
         'label' => 'Contact Email',
         'section' => 'bigboca_contact_section',
-        'type' => 'text',
         'priority' => 10,
     ) );
     $wp_customize->add_control(
