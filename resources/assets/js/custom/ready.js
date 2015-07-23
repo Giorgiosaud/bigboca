@@ -69,7 +69,7 @@ jQuery(document).ready(function ($) {
             console.log($(this));
             var that=$(this);
             $('body').animate({scrollTop: ($(that.data("target")).offset().top)}, 'slow','swing',function(){
-                $('body').animate({scrollTop: ($(that.data("target")).offset().top)},'fast');
+                $('body').animate({scrollTop: ($(that.data("target")).offset().top)},'slow');
             })
             // $('body').animatescroll({element: $(this).data("target")});
             $(this).parent().slideToggle('slow');
