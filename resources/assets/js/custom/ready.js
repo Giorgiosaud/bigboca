@@ -3,13 +3,11 @@ jQuery(document).ready(function ($) {
     $('#formularioDeContacto').submit(function(event){
         event.preventDefault();
         console.log($('#formularioDeContacto').serialize());
-        $.post( variables.ajax_url, ($('#formularioDeContacto').serialize(),{action : 'enviar_correo'} ))
-        .done(function(data){
+        $.post( variables.ajax_url, ($('#formularioDeContacto').serialize(),{action : 'enviar_correo'} ),
+        function(data){
             console.log(data);
-        })
-        .fail(function(){
-            alert( "error" );
-        });
+        },"text"
+        )
     });
     controller = new ScrollMagic.Controller({
         globalSceneOptions: {
