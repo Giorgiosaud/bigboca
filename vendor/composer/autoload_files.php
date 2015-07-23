@@ -7,6 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     $baseDir . '/inc/stylesandscripts.php',
+    $baseDir . '/inc/customizations/menuRegister.php',
     $baseDir . '/inc/header_customization.php',
     $baseDir . '/inc/customizations/customizer.php',
     $baseDir . '/inc/customPostType/customPosts/usDefinition.php',

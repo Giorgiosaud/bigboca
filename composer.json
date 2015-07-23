@@ -11,6 +11,7 @@
     "autoload": {
     "files": [
         "inc/stylesandscripts.php",
+        "inc/customizations/menuRegister.php",
         "inc/header_customization.php",
         "inc/customizations/customizer.php",
         "inc/customPostType/customPosts/usDefinition.php",
