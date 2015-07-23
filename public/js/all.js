@@ -13548,6 +13548,7 @@ jQuery(document).ready(function ($) {
    )
    ;
 });
+});
 jQuery(document).ready(function($) {
 	// var firstAnimation = new TimelineMax();
  //    firstAnimation.insert(TweenMax.to($('.logoContainer'), 1, {height: 0, width: 0}));
