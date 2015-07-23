@@ -13431,12 +13431,9 @@ jQuery(document).ready(function ($) {
     $('#formularioDeContacto').submit(function(event){
         // return false;
         event.preventDefault();
-    });
-    $('#submitForm').click(function(event) {
-        event.preventDefault;
         console.log($('#formularioDeContacto').serialize());
-
-   });
+        
+    });
     controller = new ScrollMagic.Controller({
         globalSceneOptions: {
             triggerHook: (0.8)
