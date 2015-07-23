@@ -1,5 +1,5 @@
 <?php
-include_once 'inc/stylesandscripts.php';
+include_once 'vendor/autoload.php';
 include_once 'inc/header_customization.php';
 include_once 'inc/customPostType/customPosts.php';
 include_once 'inc/customShortcode/shortcodes.php';
