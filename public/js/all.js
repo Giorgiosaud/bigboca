@@ -13428,11 +13428,11 @@ jQuery(window).resize(function () {
     resizeElementOnLoadAndResize();
 });
 jQuery(document).ready(function ($) {
-    console.log(postlove);
+    // console.log(postlove);
     $('#formularioDeContacto').submit(function(event){
         event.preventDefault();
         console.log($('#formularioDeContacto').serialize());
-        $.post( "test.php", $('#formularioDeContacto').serialize() )
+        $.post( variables.ajax_url, $('#formularioDeContacto').serialize() )
         .done(function(data){
             console.log('hecho');
         })
