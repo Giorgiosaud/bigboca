@@ -8,6 +8,10 @@ $baseDir = dirname($vendorDir);
 return array(
     $baseDir . '/inc/stylesandscripts.php',
     $baseDir . '/inc/header_customization.php',
-    $baseDir . '/inc/customPostType/customPosts.php',
-    $baseDir . '/inc/customShortcode/shortcodes.php',
+    $baseDir . '/inc/customPostType/customPosts/usDefinition.php',
+    $baseDir . '/inc/customPostType/customPosts/Capabilities.php',
+    $baseDir . '/inc/customShortcode/shortCodes/usSection.php',
+    $baseDir . '/inc/customShortcode/shortCodes/intro.php',
+    $baseDir . '/inc/customShortcode/shortCodes/capabilitiesSection.php',
+    $baseDir . '/inc/customShortcode/shortCodes/contact.php',
 );
