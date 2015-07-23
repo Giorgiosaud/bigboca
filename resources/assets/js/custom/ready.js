@@ -5,7 +5,7 @@ jQuery(document).ready(function ($) {
         console.log($('#formularioDeContacto').serialize());
         $.post( variables.ajax_url, ($('#formularioDeContacto').serialize(),{action : 'enviar_correo'} )
         .done(function(data){
-            console.log('hecho');
+            console.log(data);
         })
         .fail(function(){
             alert( "error" );
