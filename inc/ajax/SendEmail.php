@@ -12,7 +12,8 @@ add_action('wp_ajax_enviar_correo', 'enviar_correo_callback');
 add_action('wp_ajax_nopriv_enviar_correo', 'enviar_correo_callback');
 
 function enviar_correo_callback() {
-	echo $_POST;
+	$message=$_POST['message'];
+	echo $message;
 	// $multiple_recipients = array(
 		// 'info@bigboca.com',
 		// $_POST['email'],
