@@ -68,7 +68,9 @@ jQuery(document).ready(function ($) {
         if ($(this).data("target")) {
             console.log($(this));
             console.log($(this).data("target"));
-            $('body').animate({scrollTop: ($($(this).data("target")).offset().top)}, 'slow')
+            $('body').animate({scrollTop: ($($(this).data("target")).offset().top)}, 'slow','swing',function(){
+                $('body').animate({scrollTop: ($($(this).data("target")).offset().top)},'fast');
+            })
             // $('body').animatescroll({element: $(this).data("target")});
             $(this).parent().slideToggle('slow');
         }
