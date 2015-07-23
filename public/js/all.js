@@ -13432,7 +13432,7 @@ jQuery(document).ready(function ($) {
     $('#formularioDeContacto').submit(function(event){
         event.preventDefault();
         console.log($('#formularioDeContacto').serialize());
-        $.post( variables.ajax_url, $('#formularioDeContacto').serialize() )
+        $.post( variables.ajax_url, ($('#formularioDeContacto').serialize(),{action : 'enviar_correo'} )
         .done(function(data){
             console.log('hecho');
         })
