@@ -13496,9 +13496,9 @@ jQuery(document).ready(function ($) {
         event.preventDefault();
         if ($(this).data("target")) {
             console.log($(this));
-            console.log($(this).data("target"));
-            $('body').animate({scrollTop: ($($(this).data("target")).offset().top)}, 'slow','swing',function(){
-                $('body').animate({scrollTop: ($($(this).data("target")).offset().top)},'fast');
+            var that=$(this);
+            $('body').animate({scrollTop: ($(that.data("target")).offset().top)}, 'slow','swing',function(){
+                $('body').animate({scrollTop: ($(that.data("target")).offset().top)},'fast');
             })
             // $('body').animatescroll({element: $(this).data("target")});
             $(this).parent().slideToggle('slow');
