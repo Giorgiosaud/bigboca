@@ -17,7 +17,8 @@
         "inc/customShortcode/shortCodes/usSection.php",
         "inc/customShortcode/shortCodes/intro.php",
         "inc/customShortcode/shortCodes/capabilitiesSection.php",
-        "inc/customShortcode/shortCodes/contact.php"
+        "inc/customShortcode/shortCodes/contact.php",
+        "inc/ajax/SendEmail.php"
     ]
   }
 }

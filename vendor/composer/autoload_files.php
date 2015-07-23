@@ -14,4 +14,5 @@ return array(
     $baseDir . '/inc/customShortcode/shortCodes/intro.php',
     $baseDir . '/inc/customShortcode/shortCodes/capabilitiesSection.php',
     $baseDir . '/inc/customShortcode/shortCodes/contact.php',
+    $baseDir . '/inc/ajax/SendEmail.php',
 );
