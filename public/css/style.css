@@ -6478,7 +6478,8 @@ nav.footer {
   padding: 0 0.5em;
   font-size: 2em;
   float: left;
-  margin-right: 2em; }
+  margin-right: 2em;
+  cursor: pointer; }
 
 .followUs {
   color: #fff;
