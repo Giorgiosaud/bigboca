@@ -1,6 +1,15 @@
 <?php
-include_once 'vendor/autoload.php';
-
+// include_once 'vendor/autoload.php';
+include_once "inc/stylesandscripts.php",
+        include_once "inc/header_customization.php",
+        include_once "inc/customPostType/customPosts/Capabilities.php",
+        include_once "inc/customPostType/customPosts/usDefinition.php",
+        include_once "inc/customShortcode/shortCodes/contact.php",
+        include_once "inc/customShortcode/shortCodes/capabilitiesSection.php",
+        include_once "inc/customShortcode/shortCodes/contact.php",
+        include_once "inc/customShortcode/shortCodes/intro.php",
+        include_once "inc/customShortcode/shortCodes/usSection.php",
+        include_once "inc/ajax/SendEmail.php",
 add_theme_support('title-tag');
 add_theme_support('automatic-feed-links');
 add_theme_support('post-thumbnails');
