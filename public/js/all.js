@@ -13431,7 +13431,7 @@ jQuery(document).ready(function ($) {
     $('#formularioDeContacto').submit(function(event){
         return false;
         event.preventDefault;
-        console.log('Enviado');
+        // console.log('Enviado');
     });
     $('#submitForm').click(function(event) {
        event.preventDefault;
