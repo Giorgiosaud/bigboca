@@ -13,7 +13,7 @@ add_action('wp_ajax_nopriv_enviar_correo', 'enviar_correo_callback');
 
 function enviar_correo_callback() {
 	$headers='From: Bigboca Web Page <info@bigboca.com>' . "\r\n";
-	$body='The Person with the email '.$_POST['email'].' writed you this message: \r\n';
+	$body='The person with the email address '.$_POST['email'].' wrote the following message on the page: ';
 	$multiple_recipients = array(
 		'info@bigboca.com',
 		'jorgelsaud@gmail.com');
