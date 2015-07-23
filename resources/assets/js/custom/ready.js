@@ -69,11 +69,11 @@ jQuery(document).ready(function ($) {
             console.log($(this));
             console.log($(this).data("target"));
             $('body').animate({scrollTop: ($($(this).data("target")).offset().top)}, 'slow')
-            $('body').animatescroll({element: $(this).data("target")});
+            // $('body').animatescroll({element: $(this).data("target")});
             $(this).parent().slideToggle('slow');
         }
         else {
-            console.log($(this));
+            // console.log($(this));
 
         }
     });
