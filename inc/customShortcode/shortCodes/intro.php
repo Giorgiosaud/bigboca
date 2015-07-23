@@ -24,7 +24,6 @@ function intro_shortcode()
                         'orderby'   => 'meta_value_num',
                         'order'     => 'ASC'
                         ));
-                    $Index = 0;
                     if ($query->have_posts()) {
                         while ($query->have_posts()) : $query->the_post();
                         $Index ++;
@@ -38,6 +37,34 @@ function intro_shortcode()
                             endwhile;
                         }
                         wp_reset_query();
+                        $id=get_field('capabilities_id');
+                        $name=get_field('capabilities_menu');
+                        $name=get_field('capabilities_icon');
+                        ?>
+                        <li class="clickable" data-target="#<?= $id ?>"><?=$name?><span class="bigbocaicon icon-<?= $icono ?>" aria-hidden="true"></span></li>
+                        <?php
+                    $query = new WP_Query(array(
+                        'post_type' => array('capabilities'),
+                        'meta_key'  => 'orden_en_menu',
+                        'orderby'   => 'meta_value_num',
+                        'order'     => 'ASC'
+                        ));
+                    if ($query->have_posts()) {
+                        while ($query->have_posts()) : $query->the_post();
+                        $Index ++;
+
+                        ?>
+
+                        <li class="clickable" data-target="#<?= get_field('id') ?>"><?php the_title() ?><span
+                            class="bigbocaicon icon-<?= get_field('icono') ?> iconoMenu"
+                            aria-hidden="true"></span></li>
+                            <?php
+                            endwhile;
+                        }
+                        wp_reset_query();
+                        $id=get_field('capabilities_id');
+                        $name=get_field('capabilities_menu');
+                        $name=get_field('capabilities_icon');
                         ?>
                     </div>
 
