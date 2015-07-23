@@ -3,6 +3,7 @@
 function intro_shortcode()
 {
     $comment=get_field('intro_message');
+    $icono=get_field('us_icono');
     ob_start(); ?>
     <nav class="menuPrincipal">
 
@@ -14,9 +15,7 @@ function intro_shortcode()
             </li>
             <li class="clearfix"></li>
             <div class="hiddenMenuElements">
-                <li class="clickable" data-target="#us">Us<span
-                    class="bigbocaicon icon-us iconoMenu"
-                    aria-hidden="true"></span></li>
+                <li class="clickable" data-target="#us">Us<span class="bigbocaicon icon-<?= $icono ?>" aria-hidden="true"></span></li>
                     <?php
                     $query = new WP_Query(array(
                         'post_type' => array('us', 'capabilities'),
