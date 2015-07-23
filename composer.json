@@ -12,6 +12,7 @@
     "files": [
         "inc/stylesandscripts.php",
         "inc/header_customization.php",
+        "inc/customizations/customizer.php",
         "inc/customPostType/customPosts/usDefinition.php",
         "inc/customPostType/customPosts/Capabilities.php",
         "inc/customShortcode/shortCodes/usSection.php",
@@ -19,6 +20,7 @@
         "inc/customShortcode/shortCodes/capabilitiesSection.php",
         "inc/customShortcode/shortCodes/contact.php",
         "inc/ajax/SendEmail.php"
+
     ]
   }
 }
