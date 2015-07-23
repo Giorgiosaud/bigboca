@@ -13431,7 +13431,7 @@ jQuery(document).ready(function ($) {
     $('#formularioDeContacto').submit(function(event){
         event.preventDefault();
         console.log($('#formularioDeContacto').serialize());
-        $.post( "test.php", { $('#formularioDeContacto').serialize() } )
+        $.post( "test.php", $('#formularioDeContacto').serialize() )
         .done(function(data){
             console.log('hecho');
         })
