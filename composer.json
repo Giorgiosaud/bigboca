@@ -10,16 +10,7 @@
     "require": {},
     "autoload": {
     "files": [
-        "inc/stylesandscripts.php",
-        "inc/header_customization.php",
-        "inc/customPostType/customPosts/Capabilities.php",
-        "inc/customPostType/customPosts/usDefinition.php",
-        "inc/customShortcode/shortCodes/contact.php",
-        "inc/customShortcode/shortCodes/capabilitiesSection.php",
-        "inc/customShortcode/shortCodes/contact.php",
-        "inc/customShortcode/shortCodes/intro.php",
-        "inc/customShortcode/shortCodes/usSection.php",
-        "inc/ajax/SendEmail.php"
+        "inc/stylesandscripts.php"
     ]
   }
 }
