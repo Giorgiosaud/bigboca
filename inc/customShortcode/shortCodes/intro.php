@@ -45,9 +45,10 @@ function intro_shortcode()
                         <?php
                     $query = new WP_Query(array(
                         'post_type' => array('capabilities'),
-                        'meta_key'  => 'orden_en_menu',
-                        'orderby'   => 'meta_value_num',
-                        'order'     => 'ASC'
+                        'post_parent' => 0,
+                        'meta_key'    => 'orden',
+                        'orderby' => 'menu_order',
+                        'order'       => 'ASC'
                         ));
                     if ($query->have_posts()) {
                         while ($query->have_posts()) : $query->the_post();
