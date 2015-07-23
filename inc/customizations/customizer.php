@@ -6,10 +6,16 @@ function bigboca_customize_register($wp_customize)
         'priority'    => 30,
         'description' => 'Upload a logo to replace the map logo in the contacts page',
     ));
+    $wp_customize->add_section('bigboca_contact_section', array(
+        'title'       => __('Contact Us Settings', 'bigboca'),
+        'priority'    => 30,
+        'description' => 'Settings of contacts page',
+    ));
     $wp_customize->add_setting('bigboca_map_logo');
     $wp_customize->add_setting('bigboca_map_lat');
     $wp_customize->add_setting('bigboca_map_long');
     $wp_customize->add_setting('bigboca_map_zoom');
+    $wp_customize->add_setting('bigboca_mail_to');
 
     $wp_customize->add_control(
         new WP_Customize_Image_Control(
@@ -23,10 +29,17 @@ function bigboca_customize_register($wp_customize)
         )
     );
     $wp_customize->add_control(
+        'bigboca_mail_to', array(
+        'label' => 'Contact Email address',
+        'section' => 'bigboca_contact_section',
+        'type' => 'number',
+        'priority' => 10,
+    ) );
+    $wp_customize->add_control(
         'bigboca_map_lat', array(
         'label' => 'Latitude',
         'section' => 'bigboca_map_logo_section',
-        'type' => 'number',
+        'type' => 'text',
         'priority' => 10,
     ) );
     $wp_customize->add_control(
