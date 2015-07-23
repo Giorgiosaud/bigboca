@@ -530,6 +530,8 @@ nav.footer {
 .informacionFooter {
   display: table;
   float: right;
+  position: relative;
+  z-index: 225;
 }
 
 .contacto {

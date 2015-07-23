@@ -6465,7 +6465,9 @@ nav.footer {
 
 .informacionFooter {
   display: table;
-  float: right; }
+  float: right;
+  position: relative;
+  z-index: 225; }
 
 .contacto {
   color: #fff;

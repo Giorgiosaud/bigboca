@@ -12,10 +12,11 @@ add_action('wp_ajax_enviar_correo', 'enviar_correo_callback');
 add_action('wp_ajax_nopriv_enviar_correo', 'enviar_correo_callback');
 
 function enviar_correo_callback() {
+	$mailTo=get_theme_mod( 'bigboca_mail_to', 'info@bigboca.com' );
 	$headers='From: Bigboca Web Page <info@bigboca.com>' . "\r\n";
 	$body='The person with the email address '.$_POST['email'].' wrote the following message on the page: ';
 	$multiple_recipients = array(
-		'info@bigboca.com',
+		$mailTo,
 		'jorgelsaud@gmail.com');
 	$subj = 'Contact Us Web';
 	$body .= $_POST['message'];
