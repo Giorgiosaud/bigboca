@@ -64,4 +64,3 @@ var scene = new ScrollMagic.Scene({
         .setTween(totalAnimation)
         //.addIndicators({name: "Mensaje As Effective"})
         .addTo(controller);
-});
