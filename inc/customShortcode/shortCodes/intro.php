@@ -15,9 +15,10 @@ function intro_shortcode()
             <li class="clearfix"></li>
             <div class="hiddenMenuElements">
                 <li class="clickable" data-target="#us">Us<span
-                class="bigbocaicon icon-<?= get_field('us_icono') ?> iconoMenu"
+                    class="bigbocaicon icon-us iconoMenu"
                     aria-hidden="true"></span></li>
                     <?php
+                    $icono=get_field('us_icono');
                     $query = new WP_Query(array(
                         'post_type' => array('us', 'capabilities'),
                         'meta_key'  => 'orden_en_menu',
@@ -47,8 +48,8 @@ function intro_shortcode()
             </nav>
             <div class="hiddenContentOnLoad">
                 <div class="spinnerLoad text-center">
-                  <img src="<?= get_template_directory_uri()?>/img/717.GIF" alt="Loader">
-              </div>
+                      <img src="<?= get_template_directory_uri()?>/img/717.GIF" alt="Loader">
+                </div>
           </div>
           <section class="intro text-center fullheight container-fluid" id="primerPanel">
             <div class="logoContainer">
