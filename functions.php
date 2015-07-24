@@ -131,7 +131,7 @@ function b3m_theme_info() {
 }
 
 function admin_css() {
-echo '<style type="text/css">#header-logo {background-image: url('.get_stylesheet_directory_uri().'/img/login.png);}</style>';
+echo '<style type="text/css">#li#wp-admin-bar-wp-logo {background-image: url('.get_stylesheet_directory_uri().'/img/login.png);}</style>';
 }
 
 add_action('admin_head','admin_css');
