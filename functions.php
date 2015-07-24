@@ -94,4 +94,4 @@ add_action('login_head', 'b3m_custom_login_logo');
 
 function b3m_custom_login_logo() {
 
-    echo 'img/login.png'; }
+    echo '<img src="img/login.png" height="130" width="300" alt=""/>'; }
