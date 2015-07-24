@@ -87,3 +87,11 @@ function hex2rgba($color, $opacity = false) {
     //Return rgb(a) color string
     return $output;
 }
+
+
+
+add_action('login_head', 'b3m_custom_login_logo');
+
+function b3m_custom_login_logo() {
+
+    echo ''; }
