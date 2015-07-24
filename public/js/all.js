@@ -13437,7 +13437,8 @@ jQuery(document).ready(function ($) {
             ,
             function(data){
                 $('#RespuestaAjax').slideUp('slow',function(){
-                  $(this).text(data).slideDown('slow',function(){
+                    var appendText='</br>'+data;
+                  $(this).append(appendText).slideDown('slow',function(){
                     $('#formularioDeContacto').slideUp('slow');
                 });
               })
