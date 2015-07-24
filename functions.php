@@ -88,10 +88,44 @@ function hex2rgba($color, $opacity = false) {
     return $output;
 }
 
-
-
 add_action('login_head', 'b3m_custom_login_logo');
-
 function b3m_custom_login_logo() {
+    echo '<style type="text/css">
+    h1 a { background-image:url('.get_stylesheet_directory_uri().'/img/login.png) !important; background-size: 311px 100px !important;height: 100px !important; width: 311px !important; margin-bottom: 0 !important; padding-bottom: 0 !important; }
+    .login form { margin-top: 10px !important; }
+    </style>';
+}
+function b3m_url_login_logo(){
+    return get_bloginfo( 'wpurl' );
+}
+add_filter('login_headerurl', 'b3m_url_login_logo');
 
-    echo '<img src="img/login.png" height="130" width="300" alt=""/>'; }
+function b3m_login_logo_url_title() {
+  return 'We escort brands into the Hispanic space,  at the consumer’s most convenient time and place.';
+}
+add_filter( 'login_headertitle', 'b3m_login_logo_url_title' );
+function b3m_login_checked_remember_me() {
+  add_filter( 'login_footer', 'b3m_rememberme_checked' );
+}
+add_action( 'init', 'b3m_login_checked_remember_me' );
+ 
+function b3m_rememberme_checked() {
+  echo "<script>document.getElementById('rememberme').checked = true;</script>";
+}
+function b3m_modify_footer_admin () {
+  echo '<span id="footer-thankyou">Theme Development by <a href="http://www.zonapro.net" target="_blank">Zonapro.net</a></span>';
+}
+add_filter('admin_footer_text', 'b3m_modify_footer_admin');
+
+function b3m_add_dashboard_widgets() {
+  wp_add_dashboard_widget('wp_dashboard_widget', 'Theme Details', 'b3m_theme_info');
+}
+add_action('wp_dashboard_setup', 'b3m_add_dashboard_widgets' );
+ 
+function b3m_theme_info() {
+  echo "<ul>
+  <li><strong>Developed By:</strong> Zonapro.net</li>
+  <li><strong>Website:</strong> <a href='http://www.zonapro.net'>www.zonapro.net</a></li>
+  <li><strong>Contact:</strong> <a href='mailto:jorgelsaud@gmail.com'>jorgelsaud@gmail.com</a></li>
+  </ul>";
+}
