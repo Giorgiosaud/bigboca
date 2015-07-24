@@ -15,15 +15,7 @@ function contact_shortcode($atts)
             </div>
             <div class="clearfix"></div>
             <article class="container">
-                <?php if (isset($_POST['email'])) {
-                    ?>
-                    <h1>
-                        Gracias Por Contactarnos
-                    </h1>
-                    <?php
-                }
-                else{
-                    ?>
+            <div id="RespuestaAjax"></div>
                     <form id="formularioDeContacto" method="POST">
                         <input type="hidden" name="action" value="enviar_correo">
                         <div class="col-xs-6">
@@ -44,9 +36,6 @@ function contact_shortcode($atts)
                         </div>
                     </form>
                 </article>
-                <?php
-            }
-            ?>
     </section>
 
 

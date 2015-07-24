@@ -13436,6 +13436,7 @@ jQuery(document).ready(function ($) {
             $('#formularioDeContacto').serialize()+'&action=enviar_correo'
             ,
             function(data){
+                $('#RespuestaAjax').text(data).slideDown('slow');
                 console.log(data);
             },"text"
         )

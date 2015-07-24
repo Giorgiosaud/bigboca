@@ -6589,6 +6589,9 @@ nav.footer {
   overflow: scroll;
   height: 40%; }
 
+#RespuestaAjax {
+  display: none; }
+
 @media only screen and (max-width: 40em) {
   .logoContainer {
     height: 50%;
