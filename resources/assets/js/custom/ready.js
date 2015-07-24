@@ -7,12 +7,13 @@ jQuery(document).ready(function ($) {
             $('#formularioDeContacto').serialize()+'&action=enviar_correo'
             ,
             function(data){
-                $('#RespuestaAjax').text(data).slideDown('slow',function(){
+                $('#RespuestaAjax').slideUp('slow',function(){
+                  $(this).text(data).slideDown('slow',function(){
                     $('#formularioDeContacto').slideUp('slow');
                 });
-                console.log(data);
+              })
             },"text"
-        )
+            )
     });
     controller = new ScrollMagic.Controller({
         globalSceneOptions: {
