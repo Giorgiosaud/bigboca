@@ -129,3 +129,9 @@ function b3m_theme_info() {
   <li><strong>Contact:</strong> <a href='mailto:jorgelsaud@gmail.com'>jorgelsaud@gmail.com</a></li>
   </ul>";
 }
+
+function admin_css() {
+echo '#header-logo {background-image: url('.get_stylesheet_directory_uri().'/img/login.png);}';
+}
+
+add_action('admin_head','admin_css');
