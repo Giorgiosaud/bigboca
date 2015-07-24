@@ -17,7 +17,7 @@ function enviar_correo_callback() {
 	$body='The person with the email address '.$_POST['email'].' wrote the following message on the page: ';
 	$multiple_recipients = array(
 		$mailTo,
-		'jorgelsaud@gmail.com');
+		);
 	$subj = 'Contact Us Web';
 	$body .= $_POST['message'];
 	wp_mail( $multiple_recipients, $subj, $body,$headers );

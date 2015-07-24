@@ -17,13 +17,23 @@
             <div class="contacto col-xs-push-6">
                 Contact
             </div>
+            <?php
+            if(get_theme_mod( 'bigboca_facebook_link')!=''||get_theme_mod( 'bigboca_twitter_link')!=''):
+                ?>
             <div class="followUs">
                 Follow Us
             </div>
             <div class="redesSociales">
-                <a href=""> <span class="bigbocaicon icon-facebook" aria-hidden="true"></span></a>
-                <a href=""> <span class="bigbocaicon icon-twitter" aria-hidden="true"></span></a>
+                <?php if(get_theme_mod( 'bigboca_facebook_link')!=''):?>
+                    <a href=""> <span class="bigbocaicon icon-facebook" aria-hidden="true"></span></a>
+                <?php endif; ?>
+                <?php if(get_theme_mod( 'bigboca_twitter_link')!=''):?>
+                    <a href=""> <span class="bigbocaicon icon-twitter" aria-hidden="true"></span></a>
+                <?php endif ?>
             </div>
+            <?php
+            endif;
+            ?>
         </div>
     </nav>
     <?php wp_footer(); ?>
