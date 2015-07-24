@@ -15,12 +15,9 @@ function enviar_correo_callback() {
 	$mailTo=get_theme_mod( 'bigboca_mail_to', 'info@bigboca.com' );
 	$headers='From: Bigboca Web Page <info@bigboca.com>' . "\r\n";
 	$body='The person with the email address '.$_POST['email'].' wrote the following message on the page: ';
-	$multiple_recipients = array(
-		$mailTo,
-		);
 	$subj = 'Contact Us Web';
 	$body .= $_POST['message'];
-	wp_mail( $multiple_recipients, $subj, $body,$headers );
+	wp_mail( $mailTo, $subj, $body,$headers );
 	$subj = 'Contact Us Web (copied)';
 	wp_mail( $_POST['email'], $subj, $body,$headers );
 	echo 'We will put in touch with you as soon as possible';

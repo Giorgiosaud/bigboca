@@ -17,10 +17,18 @@ function bigboca_customize_register($wp_customize)
         'description' => 'Settings of Contacts page',
         ));
     $wp_customize->add_setting('bigboca_map_logo');
-    $wp_customize->add_setting('bigboca_map_lat');
-    $wp_customize->add_setting('bigboca_map_long');
-    $wp_customize->add_setting('bigboca_map_zoom');
-    $wp_customize->add_setting('bigboca_mail_to');
+    $latArgs=array(
+        'default'=>'40,825006');
+    $wp_customize->add_setting('bigboca_map_lat',$latArgs);
+    $longArgs=array(
+        'default'=>'-73,946343');
+    $wp_customize->add_setting('bigboca_map_long',$longArgs);
+    $zoomArgs=array('default'=>'18');
+    $wp_customize->add_setting('bigboca_map_zoom',$zoomArgs);
+    $mapArgs=array('default'=>'473 W 145th St., Suite 4 New York, NY 10031');
+    $wp_customize->add_setting('bigboca_map_address',$mapArgs);
+    $mailArgs=array('default'=>'info@bigboca.com');
+    $wp_customize->add_setting('bigboca_mail_to',$mailArgs);
     $wp_customize->add_setting('bigboca_facebook_link');
     $wp_customize->add_setting('bigboca_twitter_link');
     $wp_customize->add_control(
@@ -34,6 +42,12 @@ function bigboca_customize_register($wp_customize)
             'label' => 'Twitter Link',
             'section' => 'bigboca_social_section',
             'priority' => 10,
+            ) );
+    $wp_customize->add_control(
+        'bigboca_map_address', array(
+            'label' => 'Address Text',
+            'section' => 'bigboca_map_logo_section',
+            'priority' => 20,
             ) );
     $wp_customize->add_control(
         new WP_Customize_Image_Control(

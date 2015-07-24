@@ -15,7 +15,7 @@ function contact_shortcode($atts)
             </div>
             <div class="clearfix"></div>
             <article class="container">
-            <div id="RespuestaAjax"></div>
+            <div id="RespuestaAjax"><?= get_theme_mod( 'bigboca_map_address', '473 W 145th St., Suite 4 New York, NY 10031' ) ?></div>
                     <form id="formularioDeContacto" method="POST">
                         <input type="hidden" name="action" value="enviar_correo">
                         <div class="col-xs-6">
