@@ -82,7 +82,7 @@ function intro_shortcode()
           <section class="intro text-center fullheight container-fluid" id="primerPanel">
             <div class="logoContainer">
                 <img src="<?php header_image(); ?>" class="logoImg" alt="Logo">
-                <div class="col-xs-12 brandText"><span class="logoText">Big Boca Marketing</span></div>
+                <div class="col-xs-12 brandText"><span class="logoText"><?= get_theme_mod( 'bigboca_tittle' )?></span></div>
             </div>
             <div class="clearfix"></div>
             <div class="col-md-offset-3 col-md-5 col-xs-11 text-center mensajeInicial mensajeInicio">
