@@ -310,7 +310,6 @@ body {
   border-radius: 16px;
   margin-top: 1.5em;
   padding: 0.3em 1em;
-  left: 4.1555%;
   z-index: 1;
   display: block;
   margin-bottom: 1em;
@@ -711,5 +710,6 @@ nav.footer {
 }
 .col-centered{
     float: none;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
 }
