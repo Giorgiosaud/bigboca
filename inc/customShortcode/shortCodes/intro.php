@@ -85,7 +85,7 @@ function intro_shortcode()
                 <div class="col-xs-12 brandText"><span class="logoText"><?= get_theme_mod( 'bigboca_tittle' )?></span></div>
             </div>
             <div class="clearfix"></div>
-            <div class="col-md-offset-3 col-md-5 col-xs-11 text-center mensajeInicial mensajeInicio">
+            <div class="col-md-offset-3 col-md-6 col-lg-offset-3 col-lg-5 col-xs-11 text-center mensajeInicial mensajeInicio">
                 <?= $comment ?>
             </div>
             <div class="clearfix"></div>
