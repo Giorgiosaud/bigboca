@@ -11,3 +11,7 @@ Text Domain: twentyfifteen
 
 This theme, like WordPress, is licensed under the GPL.
 */
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
